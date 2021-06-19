@@ -92,6 +92,7 @@ export const BUTTONS = [
         elements: [
             {
                 css: `
+                    display: inline-block;
                     border: 0;
                     cursor: pointer;
                     background-color: #4299e1;
@@ -105,6 +106,7 @@ export const BUTTONS = [
             },
             {
                 css: `
+                    display: inline-block;
                     border: 0;
                     cursor: pointer;
                     background-color: #4299e1;
@@ -119,6 +121,7 @@ export const BUTTONS = [
             },
             {
                 css: `
+                    display: inline-block;
                     border: 0;
                     cursor: pointer;
                     background-color: #4299e1;
@@ -132,6 +135,7 @@ export const BUTTONS = [
             },
             {
                 css: `
+                    display: inline-block;
                     border: 0;
                     cursor: pointer;
                     background-color: white;
@@ -146,6 +150,7 @@ export const BUTTONS = [
             },
             {
                 css: `
+                    display: inline-block;
                     border: 0;
                     cursor: pointer;
                     background-color: white;
@@ -166,6 +171,7 @@ export const BUTTONS = [
         elements: [
             {
                 css: `
+                    display: inline-block;
                     border: none;
                     cursor: pointer;
                     font-weight: 600;
@@ -179,6 +185,7 @@ export const BUTTONS = [
             },
             {
                 css: `
+                    display: inline-block;
                     border: none;
                     cursor: pointer;
                     font-weight: 600;

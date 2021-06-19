@@ -7,7 +7,21 @@ import { Flex, CompanyName } from '@/frontend/styledComponents'
 
 const StyledButton = styled.button`
     ${({ css }) => css};
+    @media (max-width: 900px) {
+        margin-bottom: 12px;
+    }
 `
+
+const CompanyContainer = styled(Flex)`
+    height: 52px;
+    align-items: center;
+    @media (max-width: 900px) {
+        height: 100%;
+        margin-bottom: 40px;
+    }
+
+`
+
 
 
 export default function ButtonPage() {
@@ -18,13 +32,13 @@ export default function ButtonPage() {
                 {BUTTONS.map((el, i) => (
                     <div key={i} style={{ marginRight: "72px" }}>
                         <CompanyName>{el.company}</CompanyName>
-                        <Flex style={{ height: "52px" }}>
+                        <CompanyContainer>
                             {el.elements.map((b, j) => (
                                 <div key={j} style={{ marginRight: "24px" }}>
                                     <StyledButton css={b.css} >Copy css</StyledButton>
                                 </div>
                             ))}
-                        </Flex>
+                        </CompanyContainer>
                     </div>
                 ))}
             </Flex>
