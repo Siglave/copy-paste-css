@@ -14,11 +14,9 @@ export const BUTTONS = [
                     font-weight: 400;
                     line-height: 1.5;
                     text-align: center;
-                    text-decoration: none;
-                    vertical-align: middle;
                     border: 1px solid transparent;
-                    padding: .375rem .75rem;
-                    font-size: 1rem;
+                    padding: 6px 12px;
+                    font-size: 16px;
                     border-radius: .25rem;
                     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
                     :hover {
@@ -35,11 +33,9 @@ export const BUTTONS = [
                     font-weight: 400;
                     line-height: 1.5;
                     text-align: center;
-                    text-decoration: none;
-                    vertical-align: middle;
                     background-color: transparent;
                     border: 1px solid transparent;
-                    padding: .375rem .75rem;
+                    padding: 6px 12px;
                     font-size: 1rem;
                     border-radius: .25rem;
                     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -70,7 +66,6 @@ export const BUTTONS = [
                     font-weight: 500;
                     padding: 4px 8px;
                     display: inline-block;
-                    vertical-align: middle;
                     min-height: 28px;
                 `
             },
@@ -87,7 +82,6 @@ export const BUTTONS = [
                     font-weight: 500;
                     padding: 4px 8px;
                     display: inline-block;
-                    vertical-align: middle;
                     min-height: 28px;
                 `
             }
@@ -98,8 +92,7 @@ export const BUTTONS = [
         elements: [
             {
                 css: `
-                    box-sizing: border-box;
-                    border: 0 solid #e2e8f0;
+                    border: 0;
                     cursor: pointer;
                     background-color: #4299e1;
                     border-radius: 4px;
@@ -112,8 +105,7 @@ export const BUTTONS = [
             },
             {
                 css: `
-                    box-sizing: border-box;
-                    border: 0 solid #e2e8f0;
+                    border: 0;
                     cursor: pointer;
                     background-color: #4299e1;
                     border-radius: 4px;
@@ -127,8 +119,7 @@ export const BUTTONS = [
             },
             {
                 css: `
-                    box-sizing: border-box;
-                    border: 0 solid #e2e8f0;
+                    border: 0;
                     cursor: pointer;
                     background-color: #4299e1;
                     border-radius: 50px;
@@ -141,8 +132,7 @@ export const BUTTONS = [
             },
             {
                 css: `
-                    box-sizing: border-box;
-                    border: 0 solid #e2e8f0;
+                    border: 0;
                     cursor: pointer;
                     background-color: white;
                     border-radius: 4px;
@@ -156,8 +146,7 @@ export const BUTTONS = [
             },
             {
                 css: `
-                    box-sizing: border-box;
-                    border: 0 solid #e2e8f0;
+                    border: 0;
                     cursor: pointer;
                     background-color: white;
                     border-radius: 4px;
@@ -178,18 +167,7 @@ export const BUTTONS = [
             {
                 css: `
                     border: none;
-                    background: 0 0;
-                    display: inline-flex;
-                    position: relative;
-                    -webkit-box-align: center;
-                    align-items: center;
-                    -webkit-box-pack: center;
-                    justify-content: center;
-                    vertical-align: middle;
-                    overflow: hidden;
-                    text-decoration: none;
-                    white-space: nowrap;
-                    user-select: none;
+                    cursor: pointer;
                     font-weight: 600;
                     border-radius: 4px;
                     font-size: 13px;
@@ -202,18 +180,7 @@ export const BUTTONS = [
             {
                 css: `
                     border: none;
-                    background: 0 0;
-                    display: inline-flex;
-                    position: relative;
-                    -webkit-box-align: center;
-                    align-items: center;
-                    -webkit-box-pack: center;
-                    justify-content: center;
-                    vertical-align: middle;
-                    overflow: hidden;
-                    text-decoration: none;
-                    white-space: nowrap;
-                    user-select: none;
+                    cursor: pointer;
                     font-weight: 600;
                     border-radius: 4px;
                     font-size: 13px;
