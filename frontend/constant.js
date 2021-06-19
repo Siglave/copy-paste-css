@@ -1,5 +1,5 @@
 export const theme = {
-    fontFamilyText: "Rubik, sans-serif",
+    fontFamilyText: "'Roboto', sans-serif",
     fontFamilyTitle: "'Montserrat', sans-serif",
     primary7: '#312d4a',
     primary6: '#4f429a',
