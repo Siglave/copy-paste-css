@@ -1,5 +1,6 @@
 import { ToastContainer, toast } from 'react-toastify';
 import styled from 'styled-components';
+import Head from 'next/head';
 import {
     TwitterShareButton,
     TwitterIcon,
@@ -148,6 +149,9 @@ export default function ButtonPage() {
 
     return (
         <>
+            <Head>
+                <title>CSS Copy & Paste - Buttons</title>
+            </Head>
             <HeaderContainer>
                 <Nav><SiteName>📋 CSS Copy & Paste</SiteName></Nav>
                 <HeroSection>
