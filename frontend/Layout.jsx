@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#000000" />
                 <meta name="description"
-                    content="Esports Planner helps you find next valorant tournaments & scrims - Europe, North America and South America esports tournaments." />
+                    content="Copy and Past css elements" />
                 <title>CSS Copy & Paste</title>
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap" rel="stylesheet" />
