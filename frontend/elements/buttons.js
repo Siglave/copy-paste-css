@@ -983,5 +983,74 @@ export const BUTTONS = [
                 `
             },
         ]
+    },
+    {
+        company: "Discord",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding: 2px 16px;
+                    height: 38px;
+                    min-width: 96px;
+                    min-height: 38px;
+                    border: none;
+                    color: #fff;
+                    background-color: rgb(88, 101, 242);
+                    transition: background-color .17s ease,color .17s ease;
+                    :hover {
+                        background-color: rgb(71, 82, 196);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding: 2px 16px;
+                    height: 32px;
+                    min-width: 60px;
+                    min-height: 32px;
+                    border: none;
+                    color: #fff;
+                    background-color: rgb(88, 101, 242);
+                    transition: background-color .17s ease,color .17s ease;
+                    :hover {
+                        background-color: rgb(71, 82, 196);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    padding: 2px 16px;
+                    height: 32px;
+                    min-width: 60px;
+                    min-height: 32px;
+                    border: none;
+                    color: #fff;
+                    background-color: #4f545c;
+                    transition: background-color .17s ease,color .17s ease;
+                `
+            },
+
+        ]
     }
 ]
