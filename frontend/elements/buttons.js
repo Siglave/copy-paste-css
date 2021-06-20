@@ -516,5 +516,324 @@ export const BUTTONS = [
             },
 
         ]
+    },
+    {
+        company: "Salesforce",
+        designSystemUrl: "https://developer.salesforce.com/docs/component-library/overview/components",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 0 16px;
+                    background-color: #0070d2;
+                    border-radius: 0.25rem;
+                    border: 1px solid #0070d2;
+                    color: #fff;
+                    font-size: 13px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    text-align: center;
+                    :hover {
+                        background-color: #005fb2;  
+                        border-color: #005fb2;
+                    } 
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 0 16px;
+                    background-color: #fff;
+                    border-radius: 0.25rem;
+                    border: 1px solid #0070d2;
+                    color: #0070d2;
+                    font-size: 13px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    text-align: center;
+                    :hover {
+                        background-color: #f4f6f9; 
+                    } 
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 0 16px;
+                    background-color: #fff;
+                    border-radius: 0.25rem;
+                    border: 1px solid #dddbda;
+                    color: #0070d2;
+                    font-size: 13px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    text-align: center;
+                    :hover {
+                        background-color: #f4f6f9; 
+                    } 
+                `
+            },
+
+        ]
+    },
+    {
+        company: "Atlassian",
+        designSystemUrl: "https://atlassian.design/",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    border-width: 0px;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    font-size: inherit;
+                    font-weight: 500;
+                    max-width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+                    background: rgb(0, 82, 204);
+                    cursor: pointer;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0px 12px;
+                    vertical-align: middle;
+                    width: auto;
+                    font-size: 14px;
+                    color: rgb(255, 255, 255);
+                    :hover {
+                        background: rgb(0, 101, 255);
+                        text-decoration: inherit;
+                        transition-duration: 0s, 0.15s;
+                        color: rgb(255, 255, 255);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    border-width: 0px;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    font-size: inherit;
+                    font-weight: 500;
+                    max-width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+                    background: rgb(0, 82, 204);
+                    cursor: pointer;
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0px 12px;
+                    vertical-align: middle;
+                    width: auto;
+                    font-size: 14px;
+                    color: rgb(255, 255, 255);
+                    :hover {
+                        background: rgb(0, 101, 255);
+                        text-decoration: inherit;
+                        transition-duration: 0s, 0.15s;
+                        color: rgb(255, 255, 255);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    border-width: 0px;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    font-size: inherit;
+                    font-weight: 500;
+                    max-width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+                    background: #091e420a;
+                    cursor: pointer;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0px 12px;
+                    vertical-align: middle;
+                    width: auto;
+                    font-size: 14px;
+                    color: #42526e;
+                    :hover {
+                        background: #091e4214;
+                        text-decoration: inherit;
+                        transition-duration: 0s, 0.15s;
+                        color: #42526e;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Flexport",
+        designSystemUrl: "https://www.flexport.com/design",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    padding: 0 12px;
+                    line-height: 20px;
+                    height: 30px;
+                    max-height: 30px;
+                    background: #566AE5;
+                    font-weight: 700;
+                    border: 0;
+                    border-radius: 0;
+                    color: #FFFFFF;
+                    transition-timing-function: ease-in-out;
+                    transition-property: box-shadow;
+                    transition-duration: 150ms;
+                    :hover {
+                        box-shadow: 0 2px 2px rgb(39 44 52 / 12%);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    padding: 0 12px;
+                    line-height: 20px;
+                    height: 30px;
+                    max-height: 30px;
+                    background: #fff;
+                    font-weight: 700;
+                    border: 2px solid #DAE3F3;
+                    border-radius: 0;
+                    color: #272C34;
+                    transition-timing-function: ease-in-out;
+                    transition-property: box-shadow;
+                    transition-duration: 150ms;
+                    :hover {
+                        box-shadow: 0 2px 2px rgb(39 44 52 / 12%);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    padding: 0 12px;
+                    line-height: 20px;
+                    height: 30px;
+                    max-height: 30px;
+                    background: none;
+                    font-weight: 700;
+                    border: 0;
+                    border-radius: 0;
+                    color: #D92736;
+                    transition-timing-function: ease-in-out;
+                    transition-property: background;
+                    transition-duration: 150ms;
+                    box-shadow: none;
+                    :hover {
+                        background: #F7F9FD;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Biteable",
+        designSystemUrl: "https://biteable.github.io/biteable-ui",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    padding: 12px 24px;
+                    border: 0;
+                    color: #000021;
+                    background: #1de9b6;
+                    line-height: 1.15;
+                    font-size: 16px;
+                    :hover {
+                        transition: all .1s ease;
+                        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    padding: 12px 24px;
+                    border: 0;
+                    color: #fff;
+                    background: #000a47;
+                    line-height: 1.15;
+                    font-size: 16px;
+                    :hover {
+                        transition: all .1s ease;
+                        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    padding: 12px 24px;
+                    border: 0;
+                    color: #3a4149;
+                    background: #e7ebee;
+                    line-height: 1.15;
+                    font-size: 16px;
+                    :hover {
+                        transition: all .1s ease;
+                        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    padding: 12px 24px;
+                    border: 0;
+                    color: #fff;
+                    background: #ff5000;
+                    line-height: 1.15;
+                    font-size: 16px;
+                    :hover {
+                        transition: all .1s ease;
+                        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+                    }
+                `
+            },
+        ]
     }
 ]
