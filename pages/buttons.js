@@ -1,5 +1,15 @@
 import { ToastContainer, toast } from 'react-toastify';
 import styled from 'styled-components';
+import {
+    TwitterShareButton,
+    TwitterIcon,
+    FacebookShareButton,
+    FacebookIcon,
+    RedditShareButton,
+    RedditIcon,
+    LinkedinShareButton,
+    LinkedinIcon
+} from "react-share";
 
 import Layout from '@/frontend/Layout';
 import { BUTTONS } from '@/frontend/elements/buttons';
@@ -69,7 +79,7 @@ const Cmd = styled.span`
     background:white;
     font-size: 14px;
     border: 1px solid ${({ theme }) => theme.grey5};
-    margin: 0 12px;
+    margin: 0 6px;
     border-radius: 4px;
     padding: 4px 8px;
 `
@@ -110,8 +120,24 @@ const DesignSystemLink = styled.a`
     }
 `
 
+const ShareText = styled.p`
+    color: ${({ theme }) => theme.grey0};
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+`
 
+const ShareBlock = styled.div`
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 2px 0 0 0;
+    padding: 8px 24px;
+    background: #393939;
+`
 
+const SITE_URL = "https://css-copy-paste.com/buttons";
+const Title = "Simple CSS only Buttons for your new project!";
 
 export default function ButtonPage() {
 
@@ -125,9 +151,10 @@ export default function ButtonPage() {
             <HeaderContainer>
                 <Nav><SiteName>📋 CSS Copy & Paste</SiteName></Nav>
                 <HeroSection>
-                    <PageTitle>Simple Buttons examples</PageTitle>
+                    <PageTitle>Simple CSS only Buttons</PageTitle>
                     <SubTitle>Find the inspiration for your new button design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
+
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>
@@ -165,6 +192,39 @@ export default function ButtonPage() {
                 draggable
                 pauseOnHover
             />
+            <ShareBlock>
+                <Flex style={{ justifyContent: "center", alignItems: "center" }}>
+                    <ShareText>📡 Share</ShareText>
+                    <TwitterShareButton
+                        title={Title}
+                        url={SITE_URL}
+                        style={{ height: "36px", marginRight: "16px" }}
+                    >
+                        <TwitterIcon size={36} round />
+                    </TwitterShareButton>
+                    <FacebookShareButton
+                        title={Title}
+                        url={SITE_URL}
+                        style={{ height: "36px", marginRight: "16px" }}
+                    >
+                        <FacebookIcon size={36} round />
+                    </FacebookShareButton>
+                    <RedditShareButton
+                        title={Title}
+                        url={SITE_URL}
+                        style={{ height: "36px", marginRight: "16px" }}
+                    >
+                        <RedditIcon size={36} round />
+                    </RedditShareButton>
+                    <LinkedinShareButton
+                        title={Title}
+                        url={SITE_URL}
+                        style={{ height: "36px", }}
+                    >
+                        <LinkedinIcon size={36} round />
+                    </LinkedinShareButton>
+                </Flex>
+            </ShareBlock>
         </>
     )
 }
