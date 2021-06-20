@@ -15,6 +15,7 @@ const StyledButton = styled.button`
 const CompanyContainer = styled(Flex)`
     height: 52px;
     align-items: center;
+    margin-bottom: 64px;
     @media (max-width: 900px) {
         height: 100%;
         margin-bottom: 40px;

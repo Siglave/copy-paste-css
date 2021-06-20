@@ -835,5 +835,153 @@ export const BUTTONS = [
                 `
             },
         ]
+    },
+    {
+        company: "Material Design",
+        designSystemUrl: "https://material.io/",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border-radius: 3px;
+                    padding: 0 16px;
+                    border-radius: 4px;
+                    color: #fff;
+                    background: #6200ee;
+                    line-height: 1.15;
+                    font-size: 14px;
+                    height: 36px;
+                    word-spacing: 0px;
+                    letter-spacing: .0892857143em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    min-width: 64px;
+                    border: none;
+                    text-align: center;
+                    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+                    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+                    :hover {
+                        background: rgb(98, 0, 238);
+                        box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border-radius: 3px;
+                    padding: 0 15px;
+                    border-radius: 4px;
+                    color: #6200ee;
+                    background: transparent;
+                    line-height: 1.15;
+                    font-size: 14px;
+                    height: 36px;
+                    word-spacing: 0px;
+                    letter-spacing: .0892857143em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    min-width: 64px;
+                    border: 1px solid #6200ee;
+                    text-align: center;
+                    transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);
+                    :hover {
+                       background: #f4f4f4;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Spotify",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 1;
+                    border-radius: 500px;
+                    transition-property: background-color,border-color,color,box-shadow,filter;
+                    transition-duration: .3s;
+                    border: 1px solid transparent;
+                    letter-spacing: 2px;
+                    min-width: 160px;
+                    text-transform: uppercase;
+                    white-space: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 17px 48px;
+                    color: #fff;
+                    background-color: #1ED760;
+                    height: 48px;
+                    :hover{
+                        transform: scale(1.04);
+                        background-color: #21e065;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 1;
+                    border-radius: 500px;
+                    transition-property: background-color,border-color,color,box-shadow,filter;
+                    transition-duration: .3s;
+                    border: 1px solid transparent;
+                    letter-spacing: 2px;
+                    min-width: 160px;
+                    text-transform: uppercase;
+                    white-space: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 16px 14px 18px;
+                    color: #fff;
+                    background-color: #15883e;
+                    height: 48px;
+                    :hover{
+                        background-color: #1db954;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 1;
+                    border-radius: 500px;
+                    transition-property: background-color,border-color,color,box-shadow,filter;
+                    transition-duration: .3s;
+                    border: 1px solid transparent;
+                    letter-spacing: 2px;
+                    min-width: 160px;
+                    text-transform: uppercase;
+                    white-space: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 16px 14px 18px;
+                    color: #616467;
+                    box-shadow: inset 0 0 0 2px #616467;
+                    background-color: transparent;
+                    height: 48px;
+                    :hover{
+                        color: #fff;
+                        background-color: #616467;
+                    }
+                `
+            },
+        ]
     }
 ]
