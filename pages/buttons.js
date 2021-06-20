@@ -120,7 +120,7 @@ export default function ButtonPage() {
                 <HeroSection>
                     <PageTitle>Simple Buttons examples</PageTitle>
                     <SubTitle>Find the inspiration for your new button design. Click on an element to copy the CSS!</SubTitle>
-                    <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page</PinText>
+                    <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>

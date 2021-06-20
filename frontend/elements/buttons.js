@@ -1137,5 +1137,54 @@ export const BUTTONS = [
             },
         ],
     },
-
+    {
+        company: "Fluent UI ( Microsoft )",
+        designSystemUrl: "https://developer.microsoft.com/en-us/fluentui#/controls/web/",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    text-align: center;
+                    cursor: pointer;
+                    padding: 0px 16px;
+                    border-radius: 2px;
+                    min-width: 80px;
+                    height: 32px;
+                    background-color: rgb(0, 120, 212);
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                    font-weight: 400;
+                    box-sizing: border-box;
+                    border: 1px solid rgb(0, 120, 212);
+                    :hover {
+                        background-color: rgb(16, 110, 190);
+                        border: 1px solid rgb(16, 110, 190);
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    text-align: center;
+                    cursor: pointer;
+                    padding: 0px 16px;
+                    border-radius: 2px;
+                    min-width: 80px;
+                    height: 32px;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(50, 49, 48);
+                    font-size: 14px;
+                    font-weight: 400;
+                    box-sizing: border-box;
+                    border: 1px solid rgb(138, 136, 134);
+                    :hover {
+                        background-color: rgb(243, 242, 241);
+                        color: rgb(32, 31, 30);
+                    }
+                `
+            },
+        ]
+    }
 ]
