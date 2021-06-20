@@ -115,9 +115,8 @@ const DesignSystemLink = styled.a`
 
 export default function ButtonPage() {
 
-
     const copyCss = (css) => () => {
-        console.log(css);
+        navigator.clipboard.writeText(css)
         toast.dark('🚀 CSS Copied!');
     }
 
@@ -169,3 +168,4 @@ export default function ButtonPage() {
         </>
     )
 }
+
