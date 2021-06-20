@@ -220,11 +220,12 @@ export const BUTTONS = [
     },
     {
         company: "GitHub",
-        designSystemUrl: "https://primer.style/css/utilities/animations",
+        designSystemUrl: "https://primer.style/css/getting-started",
         elements: [
             {
                 css: `
                     display: inline-block;
+                    outline: 0;
                     cursor: pointer;
                     padding: 5px 16px;
                     font-size: 14px;
@@ -249,6 +250,7 @@ export const BUTTONS = [
             {
                 css: `
                     display: inline-block;
+                    outline: 0;
                     cursor: pointer;
                     padding: 5px 16px;
                     font-size: 14px;
@@ -273,6 +275,7 @@ export const BUTTONS = [
             {
                 css: `
                     display: inline-block;
+                    outline: 0;
                     cursor: pointer;
                     padding: 5px 16px;
                     font-size: 14px;
@@ -296,6 +299,222 @@ export const BUTTONS = [
                     }
                 `
             }
+        ]
+    },
+    {
+        company: "Shopify",
+        designSystemUrl: "https://polaris.shopify.com/components/get-started#navigation",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    cursor: pointer;
+                    text-align: center;
+                    border: 0;
+                    padding: 7px 16px;
+                    min-height: 36px;
+                    min-width: 36px;
+                    color: #ffffff;
+                    background: #008060;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+                    :hover {
+                        background: #006e52;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    cursor: pointer;
+                    text-align: center;
+                    border: 1px solid #babfc3;
+                    padding: 7px 16px;
+                    min-height: 36px;
+                    min-width: 36px;
+                    color: #202223;
+                    background: #ffffff;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+                    :hover {
+                        background: #f6f6f7;
+                        outline: 1px solid transparent;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    cursor: pointer;
+                    text-align: center;
+                    border: 1px solid #babfc3;
+                    padding: 11px 24px;
+                    min-height: 44px;
+                    min-width: 44px;
+                    color: #202223;
+                    background: #ffffff;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+                    :hover {
+                        background: #f6f6f7;
+                        outline: 1px solid transparent;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Carbon ( IBM )",
+        designSystemUrl: "https://www.carbondesignsystem.com/",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                    text-align: left;
+                    vertical-align: top;
+                    padding: calc(.875rem - 3px) 63px calc(.875rem - 3px) 15px;
+                    background-color: rgb(15, 98, 254);
+                    font-size: 14px;
+                    letter-spacing: 0.16px;
+                    min-height: 48px;
+                    line-height: 1.29;
+                    color: #fff;
+                    font-weight: 400;
+                    transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+                    :hover {
+                        background-color: #0353e9;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                    text-align: left;
+                    vertical-align: top;
+                    padding: calc(.375rem - 3px) 60px calc(.375rem - 3px) 12px;
+                    background-color: rgb(15, 98, 254);
+                    font-size: 14px;
+                    letter-spacing: 0.16px;
+                    min-height: 32px;
+                    line-height: 1.29;
+                    color: #fff;
+                    font-weight: 400;
+                    transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+                    :hover {
+                        background-color: #0353e9;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border: 1px solid #0f62fe;
+                    text-align: left;
+                    vertical-align: top;
+                    padding: calc(.875rem - 3px) 63px calc(.875rem - 3px) 15px;
+                    background-color: #00000000;
+                    font-size: 14px;
+                    letter-spacing: 0.16px;
+                    min-height: 48px;
+                    line-height: 1.29;
+                    color: #0f62fe;
+                    font-weight: 400;
+                    transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+                    :hover {
+                        background-color: #0353e9;
+                        color: #fff;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    border: 1px solid #0f62fe;
+                    text-align: left;
+                    vertical-align: top;
+                    padding: calc(.375rem - 3px) 60px calc(.375rem - 3px) 12px;
+                    background-color: #00000000;
+                    font-size: 14px;
+                    letter-spacing: 0.16px;
+                    min-height: 32px;
+                    line-height: 1.29;
+                    color: #0f62fe;
+                    font-weight: 400;
+                    transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+                    :hover {
+                        background-color: #0353e9;
+                        color: #fff;
+                    }
+                `
+            }
+        ]
+    },
+    {
+        company: "Mailchimp",
+        designSystemUrl: "https://ux.mailchimp.com/patterns/buttons",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border: 1px solid transparent;
+                    border-radius: 2px;
+                    height: 36px;
+                    line-height: 34px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    background-color: #007c89;
+                    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+                    padding: 0 18px;
+                    :hover {
+                        color: #ffffff;
+                        background-color: #006570;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border: 1px solid transparent;
+                    border-radius: 2px;
+                    height: 36px;
+                    line-height: 34px;
+                    font-size: 14px;
+                    color: #241c15;
+                    background-color: #efeeea;
+                    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+                    padding: 0 18px;
+                    :hover {
+                        color: #241c15;
+                        background-color: #d9d7cd;
+                    }
+                `
+            },
+
         ]
     }
 ]
