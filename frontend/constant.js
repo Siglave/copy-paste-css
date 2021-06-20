@@ -1,6 +1,6 @@
 export const theme = {
     fontFamilyText: "'Roboto', sans-serif",
-    fontFamilyTitle: "'Montserrat', sans-serif",
+    fontFamilyTitle: "'Allan', cursive",
     primary7: '#312d4a',
     primary6: '#4f429a',
     primary5: '#5b44e0',

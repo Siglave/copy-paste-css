@@ -7,8 +7,8 @@ const Flex = styled.div`
     flex-wrap: wrap;
 `
 
-const CompanyName = styled.p`
-    font-size: 16px;
+const CompanyName = styled.h2`
+    font-size: 24px;
     color: ${({ theme }) => theme.grey5};
     margin-bottom: 8px;
 `
