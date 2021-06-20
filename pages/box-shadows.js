@@ -38,8 +38,8 @@ const CompanyContainer = styled(Flex)`
 
 
 const HeaderContainer = styled.div`
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    background-color: #A9C9FF;
+    background-image: linear-gradient(45deg, #A9C9FF 0%, #FFBBEC 100%);
 `
 
 const HeroSection = styled.div`
@@ -129,10 +129,10 @@ const ShareBlock = styled.div`
     background: #393939;
 `
 
-const SITE_URL = "https://css-copy-paste.com/buttons";
-const Title = "Simple CSS Button examples for your new project!";
+const SITE_URL = "https://css-copy-paste.com/box-shadows";
+const Title = "Simple CSS Box-shadow examples for your new project!";
 
-export default function ButtonPage() {
+export default function BoxShadowsPage() {
 
     const copyCss = (css) => () => {
         navigator.clipboard.writeText(css)
@@ -142,13 +142,13 @@ export default function ButtonPage() {
     return (
         <>
             <Head>
-                <title>CSS Copy & Paste - Buttons</title>
+                <title>CSS Copy & Paste -  Box-shadows</title>
             </Head>
             <HeaderContainer>
                 <Navbar />
                 <HeroSection>
-                    <PageTitle>Simple CSS Button examples</PageTitle>
-                    <SubTitle>Find the inspiration for your new button design. Click on an element to copy the CSS!</SubTitle>
+                    <PageTitle>Simple CSS Box-shadow examples</PageTitle>
+                    <SubTitle>Find the inspiration for your new Box-shadow design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
 
                 </HeroSection>
