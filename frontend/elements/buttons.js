@@ -198,7 +198,46 @@ export const BUTTONS = [
                     height: 30px;
                     background-color: #9147ff;
                     color: white;
+                    padding: 0 20px;
+                    :hover {
+                        background-color: #772ce8;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    height: 30px;
+                    background-color: #9147ff;
+                    color: white;
                     padding: 0 10px;
+                    :hover {
+                        background-color: #772ce8;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    height: 30px;
+                    background-color: #0000000d;
+                    color: #0e0e10;
+                    padding: 0 20px;
+                    :hover {
+                        background-color: #0000001a;
+                    }
                 `
             },
             {
@@ -214,8 +253,12 @@ export const BUTTONS = [
                     background-color: #0000000d;
                     color: #0e0e10;
                     padding: 0 10px;
+                    :hover {
+                        background-color: #0000001a;
+                    }
                 `
             },
+
         ]
     },
     {
