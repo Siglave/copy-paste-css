@@ -1,3 +1,4 @@
+import { ToastContainer, toast } from 'react-toastify';
 import styled from 'styled-components';
 
 import Layout from '@/frontend/Layout';
@@ -113,6 +114,13 @@ const DesignSystemLink = styled.a`
 
 
 export default function ButtonPage() {
+
+
+    const copyCss = (css) => () => {
+        console.log(css);
+        toast.dark('🚀 CSS Copied!');
+    }
+
     return (
         <>
             <HeaderContainer>
@@ -140,7 +148,7 @@ export default function ButtonPage() {
                             <CompanyContainer>
                                 {el.elements.map((b, j) => (
                                     <div key={j} style={{ marginRight: "24px" }}>
-                                        <StyledButton css={b.css} >Copy css</StyledButton>
+                                        <StyledButton onClick={copyCss(b.css)} css={b.css} >Copy css</StyledButton>
                                     </div>
                                 ))}
                             </CompanyContainer>
@@ -148,6 +156,16 @@ export default function ButtonPage() {
                     ))}
                 </Flex>
             </Layout>
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                draggable
+                pauseOnHover
+            />
         </>
     )
 }

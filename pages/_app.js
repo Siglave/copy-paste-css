@@ -2,6 +2,8 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import { theme } from '../frontend/constant';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const GlobalStyle = createGlobalStyle`
 * {
