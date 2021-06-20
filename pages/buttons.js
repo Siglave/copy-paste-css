@@ -118,7 +118,7 @@ export default function ButtonPage() {
             <HeaderContainer>
                 <Nav><SiteName>📋 CSS Copy & Paste</SiteName></Nav>
                 <HeroSection>
-                    <PageTitle>Buttons examples</PageTitle>
+                    <PageTitle>Simple Buttons examples</PageTitle>
                     <SubTitle>Find the inspiration for your new button design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page</PinText>
                 </HeroSection>

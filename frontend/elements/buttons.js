@@ -100,88 +100,45 @@ export const BUTTONS = [
         ],
     },
     {
-        company: "Tailwindcss",
+        company: "Airbnb",
         elements: [
             {
                 css: `
                     display: inline-block;
-                    outline: 0;
-                    border: 0;
+                    outline: none;
                     cursor: pointer;
-                    background-color: #4299e1;
-                    border-radius: 4px;
-                    padding: 8px 16px;
                     font-size: 16px;
-                    font-weight: 700;
-                    color: white;
-                    line-height: 26px;
-                `
-            },
-            {
-                css: `
-                    display: inline-block;
-                    outline: 0;
-                    border: 0;
-                    cursor: pointer;
-                    background-color: #4299e1;
-                    border-radius: 4px;
-                    padding: 8px 16px;
-                    font-size: 16px;
-                    border-bottom: 4px solid #2b6cb0;
-                    font-weight: 700;
-                    color: white;
-                    line-height: 26px;
-                `
-            },
-            {
-                css: `
-                    display: inline-block;
-                    outline: 0;
-                    border: 0;
-                    cursor: pointer;
-                    background-color: #4299e1;
-                    border-radius: 50px;
-                    padding: 8px 16px;
-                    font-size: 16px;
-                    font-weight: 700;
-                    color: white;
-                    line-height: 26px;
-                `
-            },
-            {
-                css: `
-                    display: inline-block;
-                    outline: 0;
-                    border: 0;
-                    cursor: pointer;
-                    background-color: white;
-                    border-radius: 4px;
-                    padding: 8px 16px;
-                    font-size: 16px;
+                    line-height: 20px;
                     font-weight: 600;
-                    color: rgb(43, 108, 176);
-                    border: 1px solid rgb(66, 153, 225);
-                    line-height: 26px;
+                    border-radius: 8px;
+                    padding: 14px 24px;
+                    border: none;
+                    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+                    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+                    color: #fff;
                 `
             },
             {
                 css: `
                     display: inline-block;
-                    outline: 0;
-                    border: 0;
+                    outline: none;
                     cursor: pointer;
-                    background-color: white;
-                    border-radius: 4px;
-                    padding: 8px 16px;
                     font-size: 16px;
+                    line-height: 20px;
                     font-weight: 600;
-                    color: #2d3748;
-                    border: 1px solid #cbd5e0;
-                    line-height: 26px;
-                    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+                    border-radius: 8px;
+                    padding: 13px 23px;
+                    border: 1px solid #222222;
+                    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+                    background: #fff;
+                    color: #222222;
+                    :hover {
+                        border-color: #000000;
+                        background: #f7f7f7;
+                    }
                 `
             },
-        ],
+        ]
     },
     {
         company: "Twitch",
@@ -416,6 +373,55 @@ export const BUTTONS = [
         ]
     },
     {
+        company: "Mailchimp",
+        designSystemUrl: "https://ux.mailchimp.com/patterns/buttons",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border: 1px solid transparent;
+                    border-radius: 2px;
+                    height: 36px;
+                    line-height: 34px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    background-color: #007c89;
+                    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+                    padding: 0 18px;
+                    :hover {
+                        color: #ffffff;
+                        background-color: #006570;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border: 1px solid transparent;
+                    border-radius: 2px;
+                    height: 36px;
+                    line-height: 34px;
+                    font-size: 14px;
+                    color: #241c15;
+                    background-color: #efeeea;
+                    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+                    padding: 0 18px;
+                    :hover {
+                        color: #241c15;
+                        background-color: #d9d7cd;
+                    }
+                `
+            },
+
+        ]
+    },
+    {
         company: "Carbon ( IBM )",
         designSystemUrl: "https://www.carbondesignsystem.com/",
         elements: [
@@ -509,55 +515,6 @@ export const BUTTONS = [
                     }
                 `
             }
-        ]
-    },
-    {
-        company: "Mailchimp",
-        designSystemUrl: "https://ux.mailchimp.com/patterns/buttons",
-        elements: [
-            {
-                css: `
-                    display: inline-block;
-                    outline: none;
-                    cursor: pointer;
-                    font-weight: 500;
-                    border: 1px solid transparent;
-                    border-radius: 2px;
-                    height: 36px;
-                    line-height: 34px;
-                    font-size: 14px;
-                    color: #ffffff;
-                    background-color: #007c89;
-                    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-                    padding: 0 18px;
-                    :hover {
-                        color: #ffffff;
-                        background-color: #006570;
-                    }
-                `
-            },
-            {
-                css: `
-                    display: inline-block;
-                    outline: none;
-                    cursor: pointer;
-                    font-weight: 500;
-                    border: 1px solid transparent;
-                    border-radius: 2px;
-                    height: 36px;
-                    line-height: 34px;
-                    font-size: 14px;
-                    color: #241c15;
-                    background-color: #efeeea;
-                    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-                    padding: 0 18px;
-                    :hover {
-                        color: #241c15;
-                        background-color: #d9d7cd;
-                    }
-                `
-            },
-
         ]
     },
     {
@@ -1095,5 +1052,90 @@ export const BUTTONS = [
             },
 
         ]
-    }
+    },
+    {
+        company: "Tailwindcss",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: #4299e1;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: white;
+                    line-height: 26px;
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: #4299e1;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    font-size: 16px;
+                    border-bottom: 4px solid #2b6cb0;
+                    font-weight: 700;
+                    color: white;
+                    line-height: 26px;
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: #4299e1;
+                    border-radius: 50px;
+                    padding: 8px 16px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: white;
+                    line-height: 26px;
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: white;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: rgb(43, 108, 176);
+                    border: 1px solid rgb(66, 153, 225);
+                    line-height: 26px;
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: white;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #2d3748;
+                    border: 1px solid #cbd5e0;
+                    line-height: 26px;
+                    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+                `
+            },
+        ],
+    },
+
 ]
