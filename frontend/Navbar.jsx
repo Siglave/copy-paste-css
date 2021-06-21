@@ -34,7 +34,7 @@ export default function Navbar() {
     return (
         <Nav>
             <Flex style={{ justifyContent: "space-between" }}>
-                <SiteName>📋 CSS Copy & Paste</SiteName>
+                <SiteName>📋 Copy & Paste CSS</SiteName>
                 <div>
                     <Link href='/buttons' passHref>
                         <StyledLink style={{ marginRight: '16px' }} >Buttons</StyledLink>

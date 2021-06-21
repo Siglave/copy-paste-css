@@ -1369,6 +1369,31 @@ export const BUTTONS = [
                 }
                 `
             },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                text-align: center;
+                cursor: pointer;
+                background: #fff;
+                border-color: #fff;
+                color: #000;
+                height: 42px;
+                padding: 0 20px;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                transition: all .3s ease;
+                text-align: center;
+                min-width: 110px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 13px;
+                :hover {
+                    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+                }
+                `
+            },
         ]
     },
 ]

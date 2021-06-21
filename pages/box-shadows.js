@@ -158,7 +158,7 @@ export default function BoxShadowsPage() {
     return (
         <>
             <Head>
-                <title>CSS Copy & Paste -  Box-shadows</title>
+                <title>Copy & Paste CSS -  Box-shadows</title>
             </Head>
             <HeaderContainer>
                 <Navbar />
@@ -166,7 +166,6 @@ export default function BoxShadowsPage() {
                     <PageTitle>Simple CSS Box-shadow examples</PageTitle>
                     <SubTitle>Find the inspiration for your new Box-shadow design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
-
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>

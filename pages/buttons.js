@@ -142,7 +142,7 @@ export default function ButtonPage() {
     return (
         <>
             <Head>
-                <title>CSS Copy & Paste - Buttons</title>
+                <title>Copy & Paste CSS - Buttons</title>
             </Head>
             <HeaderContainer>
                 <Navbar />
