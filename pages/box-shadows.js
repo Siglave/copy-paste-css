@@ -145,7 +145,7 @@ const ShareBlock = styled.div`
     background: #393939;
 `
 
-const SITE_URL = "https://css-copy-paste.com/box-shadows";
+const SITE_URL = "https://copy-paste-css.com/box-shadows";
 const Title = "Simple CSS Box-shadow examples for your new project!";
 
 export default function BoxShadowsPage() {
