@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
                     function gtag(){dataLayer.push(arguments)}
                     gtag('js', new Date());
 
-                    gtag('config', 'G-78CQD51DV7');
+                    gtag('config', 'G-MV2KWMVKTK');
                 `}} />
             </Head>
             <PageStyle>
