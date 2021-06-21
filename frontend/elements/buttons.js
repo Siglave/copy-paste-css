@@ -1268,5 +1268,107 @@ export const BUTTONS = [
                 `
             },
         ]
-    }
+    },
+    {
+        company: "Techcrunch",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                text-align: center;
+                cursor: pointer;
+                padding: 17px 30px;
+                border: 0;
+                color: #fff;
+                font-size: 17.5px;
+                background: #00d301;
+                background: -webkit-linear-gradient(-196deg,#00d301,#36c275 50%,#00a562);
+                background: -webkit-linear-gradient(164deg,#00d301,#36c275 50%,#00a562);
+                background: linear-gradient(286deg,#00d301,#36c275 50%,#00a562);
+                line-height: 30px;
+                font-weight: 800;
+                transition: background,color .1s ease-in-out;
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                text-align: center;
+                cursor: pointer;
+                padding: 17px 30px;
+                border: 0;
+                color: #fff;
+                font-size: 17.5px;
+                border: 2px solid transparent;
+                border-color: #000;
+                color: #000;
+                background: transparent;
+                font-weight: 800;
+                line-height: 30px;
+                transition: background,color .1s ease-in-out;
+                :hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+                `
+            },
+        ]
+    },
+    {
+        company: "Producthunt",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                text-align: center;
+                cursor: pointer;
+                height: 34px;
+                padding: 0 13px;
+                color: #fff;
+                vertical-align: top;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                transition: all .3s ease;
+                background: #cc4d29;
+                border-color: #cc4d29;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 16px;
+                font-size: 11px;
+                :hover {
+                    background: #e4461b;
+                    border-color: #e4461b;
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                text-align: center;
+                cursor: pointer;
+                height: 34px;
+                padding: 0 13px;
+                vertical-align: top;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                transition: all .3s ease;
+                background: #fff;
+                border-color: #e8e8e8;
+                color: #000;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 16px;
+                font-size: 11px;
+                :hover {
+                    background: #e8e8e8;
+                    color: #3d3d3d;
+                }
+                `
+            },
+        ]
+    },
 ]
