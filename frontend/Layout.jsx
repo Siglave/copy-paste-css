@@ -23,6 +23,14 @@ const Layout = ({ children }) => {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap" rel="stylesheet" />
                 <link rel="icon" href="/favicon.ico" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-78CQD51DV7"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-78CQD51DV7');
+                </script>
             </Head>
             <PageStyle>
                 {children}
