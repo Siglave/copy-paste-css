@@ -36,7 +36,7 @@ export default function Navbar() {
             <Flex style={{ justifyContent: "space-between" }}>
                 <SiteName>📋 Copy & Paste CSS</SiteName>
                 <div>
-                    <Link href='/buttons' passHref>
+                    <Link href='/' passHref>
                         <StyledLink style={{ marginRight: '16px' }} >Buttons</StyledLink>
                     </Link>
                     <Link href='/box-shadows' passHref>

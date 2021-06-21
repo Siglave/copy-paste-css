@@ -129,7 +129,7 @@ const ShareBlock = styled.div`
     background: #393939;
 `
 
-const SITE_URL = "https://copy-paste-css.com/buttons";
+const SITE_URL = "https://copy-paste-css.com";
 const Title = "Simple CSS Button examples for your new project!";
 
 export default function ButtonPage() {
