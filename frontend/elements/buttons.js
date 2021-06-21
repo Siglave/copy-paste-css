@@ -1196,5 +1196,77 @@ export const BUTTONS = [
                 `
             },
         ]
+    },
+    {
+        company: "Amazon",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+                background: #FFD814;
+                border: 1px solid #FCD200;
+                font-size: 13px;
+                height: 31px;
+                padding: 0 11px;
+                text-align: center;
+                width: 100%;
+                min-width: 200px;
+                font-weight: 500;
+                color: #0F1111;
+                :hover{
+                    background: #F7CA00;
+                    border-color: #F2C200;
+                    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+                background: #FFD814;
+                border: 1px solid #FCD200;
+                font-size: 11px;
+                height: 22px;
+                padding: 0 6px;
+                text-align: center;
+                font-weight: 500;
+                color: #0F1111;
+                :hover{
+                    background: #F7CA00;
+                    border-color: #F2C200;
+                    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+                background: #FFF;
+                border: 1px solid #D5D9D9;
+                font-size: 13px;
+                height: 31px;
+                padding: 0 11px;
+                text-align: center;
+                font-weight: 400;
+                color: #0F1111;
+                :hover{
+                    background-color: #F7FAFA;
+                    border-color: #D5D9D9;
+                }
+                `
+            },
+        ]
     }
 ]
