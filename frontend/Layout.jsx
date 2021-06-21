@@ -23,14 +23,14 @@ const Layout = ({ children }) => {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap" rel="stylesheet" />
                 <link rel="icon" href="/favicon.ico" />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV2KWMVKTK"></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156528211-6"></script>
                 <script dangerouslySetInnerHTML={{
                     __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments)}
                     gtag('js', new Date());
 
-                    gtag('config', 'G-MV2KWMVKTK');
+                    gtag('config', 'UA-156528211-6');
                 `}} />
             </Head>
             <PageStyle>
