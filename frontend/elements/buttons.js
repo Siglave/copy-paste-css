@@ -13,6 +13,7 @@
 export const BUTTONS = [
     {
         company: "Bootstrap",
+        designSystemUrl: "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
         elements: [
             {
                 css: `
@@ -1063,6 +1064,7 @@ export const BUTTONS = [
     },
     {
         company: "Tailwindcss",
+        designSystemUrl: "https://tailwindcss.com/docs",
         elements: [
             {
                 css: `

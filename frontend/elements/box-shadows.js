@@ -41,7 +41,7 @@ export const BOX_SHADOWS = [
     },
     {
         company: "Bootstrap",
-        designSystemUrl: "https://primer.style/css/getting-started",
+        designSystemUrl: "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
         elements: [
             {
                 css: `box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;`
@@ -74,7 +74,7 @@ export const BOX_SHADOWS = [
     },
     {
         company: "Tailwindcss",
-        designSystemUrl: "https://primer.style/css/getting-started",
+        designSystemUrl: "https://tailwindcss.com/docs",
         elements: [
             {
                 css: `box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;`
