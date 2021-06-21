@@ -14,20 +14,34 @@ import {
 
 import Layout from '@/frontend/Layout';
 import Navbar from '@/frontend/Navbar';
-import { BUTTONS } from '@/frontend/elements/buttons';
+import { BOX_SHADOWS } from '@/frontend/elements/box-shadows';
 import { Flex, CompanyName } from '@/frontend/styledComponents'
 
 
-const StyledButton = styled.button`
+const StyledCard = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
     ${({ css }) => css};
+    font-weight: 500;
+    color: ${({ theme }) => theme.grey6};
+    margin-bottom: 24px;
+    margin-right: 72px;
+    :hover {
+        background: ${({ theme }) => theme.grey0};
+    }
     @media (max-width: 900px) {
-        margin-bottom: 12px;
+        margin-right: 24px;
     }
 `
 
 const CompanyContainer = styled(Flex)`
-    height: 72px;
     align-items: center;
+    margin-top: 32px;
     margin-bottom: 64px;
     @media (max-width: 900px) {
         height: 100%;
@@ -164,14 +178,12 @@ export default function BoxShadowsPage() {
             </ShapeContainer>
             <Layout>
                 <Flex style={{ alignItems: "start" }}>
-                    {BUTTONS.map((el, i) => (
-                        <div key={i} style={{ marginRight: "72px" }}>
+                    {BOX_SHADOWS.map((el, i) => (
+                        <div key={i}>
                             <CompanyName>{el.company} {el.designSystemUrl && (<DesignSystemLink rel="nofollow" target="_blank" href={el.designSystemUrl} >🔗 Design System</DesignSystemLink>)} </CompanyName>
                             <CompanyContainer>
                                 {el.elements.map((b, j) => (
-                                    <div key={j} style={{ marginRight: "24px" }}>
-                                        <StyledButton onClick={copyCss(b.css)} css={b.css} >Copy css</StyledButton>
-                                    </div>
+                                    <StyledCard key={j} onClick={copyCss(b.css)} css={b.css} >Copy css</StyledCard>
                                 ))}
                             </CompanyContainer>
                         </div>
