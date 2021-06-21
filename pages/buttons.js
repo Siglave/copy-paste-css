@@ -97,7 +97,7 @@ const ShapeContainer = styled.div`
     }
 
     .custom-shape-divider-bottom-1624211663 .shape-fill {
-        fill: #FFFFFF;
+        fill: #f7fafc;
     }
 `
 

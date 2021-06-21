@@ -40,6 +40,21 @@ export const BOX_SHADOWS = [
         ]
     },
     {
+        company: "Bootstrap",
+        designSystemUrl: "https://primer.style/css/getting-started",
+        elements: [
+            {
+                css: `box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;`
+            },
+            {
+                css: `box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px`
+            },
+            {
+                css: `box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px`
+            },
+        ]
+    },
+    {
         company: "GitHub",
         designSystemUrl: "https://primer.style/css/getting-started",
         elements: [
@@ -83,5 +98,68 @@ export const BOX_SHADOWS = [
                 css: `box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset`
             },
         ]
-    }
+    },
+    {
+        company: "Miscellaneous",
+        elements: [
+            {
+                css: `box-shadow: -10px -8px 0px rgb(167 243 208);`
+            },
+            {
+                css: `box-shadow: 10px -8px 0px rgb(253 230 138);`
+            },
+            {
+                css: `box-shadow: 10px 8px 0px rgb(191 219 254);`
+            },
+            {
+                css: `box-shadow: -10px 8px 0px rgb(196 181 253);`
+            },
+            {
+                css: `box-shadow: 15px 51px 45px -35px rgba(0, 0, 0, 0.2);`
+            },
+            {
+                css: `box-shadow: 7px 7px 15px #bbcfda,-4px -4px 13px #fff, inset 4px 4px 8px rgba(209, 217, 230, 0.2),  inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.3); 
+                background: #e8eff5;`
+            },
+        ]
+    },
+    {
+        company: "Stripe",
+        elements: [
+            {
+                css: `box-shadow: 0px 4px 6px 0px rgba(50,50,93,0.11) , 0px 1px 3px 0px rgba(0,0,0,0.08);`
+            },
+            {
+                css: `box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);`
+            },
+        ]
+    },
+    {
+        company: "Trello",
+        elements: [
+            {
+                css: `box-shadow: 0px 1px 0px 0px rgba(9,30,66,.25);`
+            },
+        ]
+    },
+    {
+        company: "DEV.to",
+        elements: [
+            {
+                css: `box-shadow: 3px 4px 0px 0px #4e57ef;`
+            },
+        ]
+    },
+    {
+        company: "Skeuomorphism",
+        elements: [
+            {
+                css: `box-shadow: 6px 2px 16px 0px rgba(136, 165, 191, 0.48) , -6px -2px 16px 0px rgba(255, 255, 255, 0.8);`
+            },
+            {
+                css: `box-shadow: 3px 3px 6px 0px #CCDBE8 inset, -3px -3px 6px 1px rgba(255,255,255,0.5) inset;`
+            },
+        ]
+    },
 ]

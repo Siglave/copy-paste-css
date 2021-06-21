@@ -31,8 +31,10 @@ const StyledCard = styled.div`
     color: ${({ theme }) => theme.grey6};
     margin-bottom: 24px;
     margin-right: 72px;
+    background: white;
+    transition: border-radius 70ms cubic-bezier(0,0,.38,.9);
     :hover {
-        background: ${({ theme }) => theme.grey0};
+       border-radius: 100px;
     }
     @media (max-width: 900px) {
         margin-right: 24px;
@@ -111,7 +113,7 @@ const ShapeContainer = styled.div`
     }
 
     .custom-shape-divider-bottom-1624211663 .shape-fill {
-        fill: #FFFFFF;
+        fill: #f7fafc;
     }
 `
 
@@ -177,7 +179,7 @@ export default function BoxShadowsPage() {
                 </div>
             </ShapeContainer>
             <Layout>
-                <Flex style={{ alignItems: "start" }}>
+                <Flex style={{ alignItems: "start", background: "#f7fafc" }}>
                     {BOX_SHADOWS.map((el, i) => (
                         <div key={i}>
                             <CompanyName>{el.company} {el.designSystemUrl && (<DesignSystemLink rel="nofollow" target="_blank" href={el.designSystemUrl} >🔗 Design System</DesignSystemLink>)} </CompanyName>

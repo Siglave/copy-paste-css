@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 
 const PageStyle = styled.div`
-    background: white;
+    background: #f7fafc;
     min-height: 100vh;
     padding: 48px 12%;
     @media (max-width: 1000px) {
