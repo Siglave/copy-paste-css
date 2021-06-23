@@ -8,6 +8,7 @@ import Navbar from '@/frontend/Navbar';
 import ShareBlock from '@/frontend/ShareBlock';
 import { BUTTONS } from '@/frontend/elements/buttons';
 import { Flex, CompanyName } from '@/frontend/styledComponents';
+import Footer from '@/frontend/Footer';
 
 
 const StyledButton = styled.button`
@@ -166,6 +167,7 @@ export default function ButtonPage() {
                 pauseOnHover
             />
             <ShareBlock Title={Title} SITE_URL={SITE_URL} />
+            <Footer />
         </>
     )
 }

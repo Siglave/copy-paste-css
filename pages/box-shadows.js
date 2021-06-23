@@ -8,6 +8,7 @@ import Navbar from '@/frontend/Navbar';
 import ShareBlock from '@/frontend/ShareBlock';
 import { BOX_SHADOWS } from '@/frontend/elements/box-shadows';
 import { Flex, CompanyName } from '@/frontend/styledComponents'
+import Footer from '@/frontend/Footer';
 
 
 const StyledCard = styled.div`
@@ -179,6 +180,7 @@ export default function BoxShadowsPage() {
                 pauseOnHover
             />
             <ShareBlock Title={Title} SITE_URL={SITE_URL} />
+            <Footer />
         </>
     )
 }
