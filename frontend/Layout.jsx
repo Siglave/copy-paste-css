@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const PageStyle = styled.div`
     background: #f7fafc;
     min-height: 100vh;
-    padding: 48px 12%;
+    padding: 48px 12% 0px;
     @media (max-width: 1000px) {
         padding: 24px 5%;
     }

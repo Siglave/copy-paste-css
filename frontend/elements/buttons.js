@@ -1396,4 +1396,222 @@ export const BUTTONS = [
             },
         ]
     },
+    {
+        company: "Indie hackers",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                font-size: 20px;
+                font-weight: 500;
+                color: #fff;
+                cursor: pointer;
+                background-image: linear-gradient(to right,#e052a0,#f15c41)!important;
+                border-radius: 3px;
+                padding: 16px 18px 15px;
+                white-space: nowrap;
+
+                :hover {
+                    background-color: #e6375a;
+                    background-image: none!important;
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                background-image: linear-gradient(to right,#e052a0,#f15c41);
+                cursor: pointer;
+                border-radius: 2px;
+                color: #fff;
+                font-weight: 500;
+                text-align: center;
+                text-transform: uppercase;
+                height: 36px;
+                line-height: 36px;
+                padding: 0 10px;
+                font-size: 14px;
+
+                :hover {
+                    background-image: linear-gradient(to right,#3ec7e0,#526bf4);
+                }
+                `
+            },
+        ]
+    },
+    {
+        company: "Buy me a coffee",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: none;
+                cursor: pointer;
+                padding: 0 24px;
+                border-radius: 50px;
+                min-width: 200px;
+                height: 50px;
+                font-size: 18px;
+                background-color: #fd0;
+                font-weight: 500;
+                color: #222;
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: none;
+                cursor: pointer;
+                height: 40px;
+                padding: 12px 17px;
+                border-radius: 50px;
+                background-color: #2222220d;
+                color: #222;
+                font-size: 16px;
+                font-weight: 500;
+                :hover {
+                    background-color: #2222221a;
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: none;
+                cursor: pointer;
+                height: 32px;
+                padding: 0px 16px;
+                border-radius: 50px;
+                background-color: #2222220d;
+                color: #222;
+                font-size: 12px;
+                font-weight: 500;
+                :hover {
+                    background-color: #2222221a;
+                }
+                `
+            },
+        ]
+    },
+    {
+        company: "HEY",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: none;
+                box-shadow: none;
+                cursor: pointer;
+                padding: 9px 22px;
+                font-size: 22px;
+                height: 50px;
+                font-weight: 400;
+                color: #fff;
+                text-align: center;
+                line-height: normal;
+                background: linear-gradient(90deg,#5522fa 0,#0074e4 100%);
+                border-radius: 50px;
+                transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+                :hover{
+                    box-shadow: 0 0 0 0.15rem #5ceace;
+                }
+                `
+            },
+        ]
+    },
+    {
+        company: "Slack",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: none;
+                cursor: pointer;
+                line-height: 1.2rem;
+                font-weight: 900;
+                background: #007a5a;
+                padding: 8px 14px 9px;
+                font-size: 15px;
+                border-radius: 4px;
+                color: #fff;
+                height: 36px;
+                transition: all 75ms ease-in-out;
+                :hover{
+                    box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border: 1px solid #007a5a;
+                color: #007a5a;
+                border-color: ;
+                font-weight: 700;
+                background: #fff;
+                padding: 8px;
+                font-size: 15px;
+                border-radius: 4px;
+                height: 36px;
+                transition: all 80ms linear;
+                :hover{
+                    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+                    background: rgba(248,248,248,1);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border: 1px solid #1d1c1d4d;
+                font-weight: 700;
+                background: #fff;
+                padding: 0 12px 1px;
+                font-size: 15px;
+                border-radius: 4px;
+                color: rgb(29, 28, 29);
+                height: 36px;
+                transition: all 80ms linear;
+                :hover{
+                    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+                    background: rgba(248,248,248,1);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                border: 1px solid #1d1c1d4d;
+                font-weight: 700;
+                background: #fff;
+                padding: 0 8px 1px;
+                font-size: 13px;
+                border-radius: 4px;
+                color: rgb(29, 28, 29);
+                height: 28px;
+                min-width: 56px;
+                transition: all 80ms linear;
+                :hover{
+                    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+                    background: rgba(248,248,248,1);
+                }
+                `
+            },
+        ]
+    },
 ]

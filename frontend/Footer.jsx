@@ -15,6 +15,11 @@ const FooterStyled = styled(Flex)`
 const FooterText = styled.p`
     font-size: 16px;
     color: white;
+    @media (max-width: 1000px) {
+       width: 100%;
+       text-align: center;
+       margin-bottom: 12px;
+    }
 `
 
 const TwitterLink = styled.a`
