@@ -121,6 +121,10 @@ export default function ButtonPage() {
         <>
             <Head>
                 <title>Copy & Paste CSS - Buttons</title>
+                <meta property="og:title" content="CSS Buttons examples" />
+                <meta property="og:description" content="Find inspiration with a curated list of simple Buttons examples for your next project. Just Copy and Past every CSS element!" />
+                <meta property="og:url" content="https://copy-paste-css.com" />
+                <meta property="og:image" content="https://i.imgur.com/6PUOmTB.png" />
             </Head>
             <HeaderContainer>
                 <Navbar />
