@@ -1758,4 +1758,83 @@ export const BUTTONS = [
             },
         ]
     },
+    {
+        company: "Wes Bos",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                font-size: 30px;
+                text-decoration: none;
+                line-height: 1;
+                position: relative;
+                padding: 10px;
+                background: #1abebf;
+                background-image: linear-gradient(122deg,#37e0e0,#1abebe);
+                background-size: 300px,300px,100%;
+                color: #fff;
+                border-bottom: 5px solid #ffc600;
+                box-shadow: 0 0 3px 3px rgb(0 0 0 / 5%);
+                text-shadow: 0 0 3px rgb(0 0 0 / 30%);
+                transition: all .3s;
+                :hover{
+                    box-shadow: 0 0 3px 3px rgb(0 0 0 / 8%);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border:0;
+                cursor: pointer;
+                text-decoration: none;
+                position: relative;
+                color: #000;
+                background: #fff;
+                line-height: 30px;
+                border-radius: 40px;
+                padding: 20px;
+                font-size: 30px;
+                font-weight: 600;
+                box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+                transition: all 0.2s;
+                :hover{
+                    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+                    transform: scale(1.01);
+                }
+                `
+            },
+        ]
+    },
+    {
+        company: "Linear",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 500;
+                border-radius: 4px;
+                font-size: 14px;
+                height: 30px;
+                padding: 0px 15px;
+                text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px;
+                background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+                transition: all 0.5s ease 0s;
+                :hover{
+                    box-shadow: rgb(80 63 205 / 50%) 0px 1px 40px;
+                    transition: all 0.1s ease 0s;
+                }
+                `
+            },
+
+        ]
+    },
 ]
