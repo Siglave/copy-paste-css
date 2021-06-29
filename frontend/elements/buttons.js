@@ -1882,4 +1882,101 @@ export const BUTTONS = [
 
         ]
     },
+    {
+        company: "Algolia",
+        elements: [
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                will-change: box-shadow,transform;
+                background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+                box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+                padding: 0 32px;
+                border-radius: 6px;
+                color: #fff;
+                height: 48px;
+                font-size: 18px;
+                text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+                transition: box-shadow 0.15s ease,transform 0.15s ease;
+                :hover {
+                    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+                    transform: translateY(-2px);
+                }
+                :active{
+                    box-shadow: inset 0px 3px 7px #3c4fe0;
+                    transform: translateY(2px);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                transition: box-shadow 0.15s ease,transform 0.15s ease;
+                will-change: box-shadow,transform;
+                background: #FCFCFD;
+                box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+                height: 48px;
+                padding: 0 32px;
+                font-size: 18px;
+                border-radius: 6px;
+                color: #36395a;
+                transition: box-shadow 0.15s ease,transform 0.15s ease;
+                :hover {
+                    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+                    transform: translateY(-2px);
+                }
+                :active{
+                    box-shadow: inset 0px 3px 7px #d6d6e7;
+                    transform: translateY(2px);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                font-weight: 600;
+                color: #fff;
+                font-size: 14px;
+                height: 38px;
+                padding: 8px 24px;
+                border-radius: 50px;
+                background-image: linear-gradient(180deg,#7c8aff,#3c4fe0);
+                box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+                transition: all .2s ease-out;
+                :hover{
+                    box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+                }
+                `
+            },
+            {
+                css: `
+                display: inline-block;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                font-weight: 600;
+                color: rgb(72, 76, 122);
+                font-size: 14px;
+                height: 38px;
+                padding: 8px 24px;
+                border-radius: 50px;
+                background-image: linear-gradient(180deg,#fff,#f5f5fa);
+                box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+                transition: all .2s ease-out;
+                :hover{
+                    box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+                }
+                `
+            },
+        ]
+    },
 ]
