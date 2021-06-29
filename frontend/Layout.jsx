@@ -23,6 +23,7 @@ const Layout = ({ children }) => {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap" rel="stylesheet" />
                 <link rel="icon" href="/favicon.ico" />
+                <script data-ad-client="ca-pub-6569074736933141" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156528211-6"></script>
                 <script dangerouslySetInnerHTML={{
                     __html: `
