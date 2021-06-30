@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 
 const PageStyle = styled.div`
-    background: #f7fafc;
+    background: ${({ white }) => white ? "#fff" : "#f7fafc"} ;
     min-height: 100vh;
     padding: 48px 12% 0px;
     @media (max-width: 1000px) {
@@ -11,7 +11,7 @@ const PageStyle = styled.div`
     }
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, white }) => {
     return (
         <>
             <Head>
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
                     gtag('config', 'UA-156528211-6');
                 `}} />
             </Head>
-            <PageStyle>
+            <PageStyle white={white}>
                 {children}
             </PageStyle>
         </>

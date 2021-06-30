@@ -82,7 +82,7 @@ const ShapeContainer = styled.div`
     }
 
     .custom-shape-divider-bottom-1624211663 .shape-fill {
-        fill: #f7fafc;
+        fill: #fff;
     }
 `
 
@@ -100,13 +100,13 @@ const DesignSystemLink = styled.a`
 
 const ColorCard = styled.div`
     cursor: pointer;
-    height: 85px;
-    width: 75px;
+    height: 75px;
+    width: 65px;
     display: flex;
     justify-content: start;
     align-items: flex-end;
     transition: 0.2s;
-    font-size:14px;
+    font-size:12px;
     :hover{
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         transform: scale(1.5);
@@ -121,9 +121,16 @@ const Color = styled.span`
     text-transform: uppercase;
 `
 
+const CompanyWrapper = styled.div`
+    width: 50%;
+    @media (max-width: 1400px) {
+        width: 100%;
+    }
+`
+
 
 const SITE_URL = "https://copy-paste-css.com/color-palettes";
-const Title = "Simple Color Palettes examples for your new project!";
+const Title = "Complete Color Palettes examples for your new project!";
 
 export default function ColorPalettesPage() {
 
@@ -136,14 +143,14 @@ export default function ColorPalettesPage() {
             <Head>
                 <title>Copy & Paste CSS -  Box-shadows</title>
                 <meta property="og:title" content="CSS Box Shadows examples" />
-                <meta property="og:description" content="Find inspiration with a curated list of simple Color Palettes examples for your next project. Just Copy and Past every CSS element!" />
+                <meta property="og:description" content="Find inspiration with a curated list of complete Color Palettes examples for your next project. Just Copy and Past every CSS element!" />
                 <meta property="og:url" content="https://copy-paste-css.com/color-palettes" />
                 <meta property="og:image" content="https://i.imgur.com/HbXd9YG.png" />
             </Head>
             <HeaderContainer>
                 <Navbar />
                 <HeroSection>
-                    <PageTitle>Simple Color Palettes examples</PageTitle>
+                    <PageTitle>Complete Color Palettes examples</PageTitle>
                     <SubTitle>Find the inspiration for your new Color palette. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
                 </HeroSection>
@@ -157,23 +164,23 @@ export default function ColorPalettesPage() {
                     </svg>
                 </div>
             </ShapeContainer>
-            <Layout>
-                <Flex style={{ alignItems: "start", background: "#f7fafc" }}>
+            <Layout white>
+                <Flex style={{ alignItems: "start", background: "#fff" }}>
                     {PALETTES.map((el, i) => (
-                        <div key={i}>
+                        <CompanyWrapper key={i}>
                             <CompanyName>{el.company} {el.designSystemUrl && (<DesignSystemLink rel="nofollow" target="_blank" href={el.designSystemUrl} >🔗 Design System</DesignSystemLink>)} </CompanyName>
                             <CompanyContainer>
                                 {el.palette.map((paletteColor, j) => (
                                     <Flex style={{ width: "100%", marginBottom: "8px" }} key={j}>
-                                        {paletteColor.map((color) => (
-                                            <ColorCard onClick={copyCss(color)} style={{ background: color }}>
+                                        {paletteColor.map((color, y) => (
+                                            <ColorCard key={y} onClick={copyCss(color)} style={{ background: color }}>
                                                 <Color>{color}</Color>
                                             </ColorCard>
                                         ))}
                                     </Flex>
                                 ))}
                             </CompanyContainer>
-                        </div>
+                        </CompanyWrapper>
                     ))}
                 </Flex>
             </Layout>
