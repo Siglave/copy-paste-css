@@ -162,4 +162,25 @@ export const BOX_SHADOWS = [
             },
         ]
     },
+    {
+        company: "Finastra",
+        designSystemUrl: "https://design.fusionfabric.cloud/",
+        elements: [
+            {
+                css: `box-shadow: 0 3px 1px -2px rgb(0 0 0 / 16%), 0 2px 2px 0 rgb(0 0 0 / 11%), 0 1px 5px 0 rgb(0 0 0 / 10%);`
+            },
+            {
+                css: `box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);`
+            },
+            {
+                css: `box-shadow: 0 5px 5px -3px rgb(0 0 0 / 16%), 0 8px 10px 1px rgb(0 0 0 / 11%), 0 3px 14px 2px rgb(0 0 0 / 10%);`
+            },
+            {
+                css: `box-shadow: 0 8px 10px -5px rgb(0 0 0 / 16%), 0 16px 24px 2px rgb(0 0 0 / 11%), 0 6px 30px 5px rgb(0 0 0 / 10%);`
+            },
+            {
+                css: `box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);`
+            },
+        ]
+    },
 ]

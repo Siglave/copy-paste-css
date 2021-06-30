@@ -346,5 +346,116 @@ export const PALETTES = [
                 "#43005c",
             ]
         ]
+    },
+    {
+        company: "Finastra",
+        designSystemUrl: "https://design.fusionfabric.cloud/",
+        palette: [
+            [
+                "#FAFAFA",
+                "#EAEAEA",
+                "#CECECE",
+                "#9F9F9F",
+                "#707070",
+                "#414141",
+                "#2D2D2D",
+            ],
+            [
+                "#D9D3F5",
+                "#B4A6EA",
+                "#8F7BE1",
+                "#694ED6",
+                "#493694",
+            ],
+            [
+                "#EFCCE7",
+                "#DF9AD0",
+                "#D069B9",
+                "#C137A2",
+                "#862670",
+            ],
+            [
+                "#F8BDCF",
+                "#F17FA2",
+                "#EA3F74",
+                "#E40046",
+            ],
+            [
+                "#FFE1CD",
+                "#FFC39C",
+                "#FFA76D",
+                "#FF8A3D",
+            ],
+            [
+                "#FBEBC7",
+                "#F7D991",
+                "#F3C65A",
+                "#F0B323",
+            ],
+            [
+                "#F3F4D3",
+                "#E8EAA9",
+                "#DDE17F",
+                "#D2D755",
+            ],
+            [
+                "#D4EFDA",
+                "#A9E0B7",
+                "#80D194",
+                "#56C271",
+            ],
+            [
+                "#D6EFF5",
+                "#ADE0EB",
+                "#84D0E1",
+                "#5BC1D7",
+            ]
+        ]
+    },
+    {
+        company: "MongoDB",
+        designSystemUrl: "https://www.mongodb.design/",
+        palette: [
+            [
+                "#F9FBFA",
+                "#E7EEEC",
+                "#B8C4C2",
+                "#89979B",
+                "#5D6C74",
+                "#3D4F58",
+                "#21313C",
+            ],
+            [
+                "#E4F4E4",
+                "#C3E7CA",
+                "#13AA52",
+                "#09804C",
+                "#116149",
+                "#0B3B35",
+            ],
+            [
+                "#E1F2F6",
+                "#C5E4F2",
+                "#9DD0E7",
+                "#007CAD",
+                "#1A567E",
+                "#0D324F",
+            ],
+            [
+                "#FEF7E3",
+                "#FEF2C8",
+                "#FFDD49",
+                "#86681D",
+                "#543E07",
+            ],
+            [
+                "#FCEBE2",
+                "#F9D3C5",
+                "#CF4A22",
+                "#B1371F",
+                "#8F221B",
+                "#570B08",
+            ],
+        ]
     }
 ]

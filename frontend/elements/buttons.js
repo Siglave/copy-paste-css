@@ -1979,4 +1979,59 @@ export const BUTTONS = [
             },
         ]
     },
+    {
+        company: "MongoDB",
+        designSystemUrl: "https://www.mongodb.design/",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    appearance: none;
+                    padding: 0px 12px;
+                    border: 0px solid transparent;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    background-color: rgb(9, 128, 76);
+                    box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                    font-weight: 400;
+                    height: 36px;
+                    transition: all 150ms ease-in-out 0s;
+                    :hover {
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(17, 97, 73);
+                        box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+                    }
+                `
+            },
+            {
+                css: `
+                    display: inline-block;
+                    outline: 0;
+                    appearance: none;
+                    padding: 0px 12px;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    background-color: rgb(249, 251, 250);
+                    border: 1px solid rgb(137, 151, 155);
+                    box-shadow: rgb(6 22 33 / 30%) 0px 1px 2px;
+                    color: rgb(61, 79, 88);
+                    font-size: 14px;
+                    font-weight: 400;
+                    height: 36px;
+                    transition: all 150ms ease-in-out 0s;
+                    :hover {
+                        color: rgb(61, 79, 88);
+                        background-color: rgb(255, 255, 255);
+                        border: 1px solid rgb(93, 108, 116);
+                        box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+                    }
+                `
+            },
+        ]
+    }
 ]
