@@ -11,7 +11,7 @@ const Nav = styled.div`
     }
 `
 
-const SiteName = styled.p`
+const SiteName = styled.a`
     font-family: 'Allan', cursive;
     font-size: 24px;
     color: #393939;
@@ -20,7 +20,8 @@ const SiteName = styled.p`
 const StyledLink = styled.a`
     font-size: 16px;
     font-weight: 600;
-    color: #393939;
+    color: ${({ white }) => white ? "#fff" : "#393939"};
+    
     :hover{
         text-decoration: underline;
     }
@@ -30,17 +31,19 @@ const StyledLink = styled.a`
 `
 
 
-export default function Navbar() {
+export default function Navbar({ white }) {
     return (
         <Nav>
             <Flex style={{ justifyContent: "space-between" }}>
-                <SiteName>📋 Copy & Paste CSS</SiteName>
+                <Link href='/' passHref>
+                    <SiteName>📋 Copy & Paste CSS</SiteName>
+                </Link>
                 <div>
                     <Link href='/' passHref>
-                        <StyledLink style={{ marginRight: '16px' }} >Buttons</StyledLink>
+                        <StyledLink white={white} style={{ marginRight: '16px' }} >Buttons</StyledLink>
                     </Link>
                     <Link href='/box-shadows' passHref>
-                        <StyledLink style={{ marginRight: '16px' }} >Box-shadows</StyledLink>
+                        <StyledLink white={white} style={{ marginRight: '16px' }} >Box-shadows</StyledLink>
                     </Link>
                 </div>
             </Flex>
