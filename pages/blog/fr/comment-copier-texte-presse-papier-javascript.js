@@ -119,7 +119,7 @@ export default function CopyClipBoardFRPage() {
                 <meta property="og:image" content="https://i.imgur.com/6PUOmTB.png" />
             </Head>
             <HeaderContainer>
-                <Navbar white />
+                <Navbar />
                 <HeroSection>
                     <PageTitle>Comment copier du texte dans le presse-papier en Javascript ?</PageTitle>
                     <NavBlock />

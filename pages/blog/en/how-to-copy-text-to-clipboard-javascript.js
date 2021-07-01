@@ -119,7 +119,7 @@ export default function CopyClipBoardENPage() {
                 <meta property="og:image" content="https://i.imgur.com/6PUOmTB.png" />
             </Head>
             <HeaderContainer>
-                <Navbar white />
+                <Navbar />
                 <HeroSection>
                     <PageTitle>How to copy text to clipboard in Javascript?</PageTitle>
                     <NavBlock />
