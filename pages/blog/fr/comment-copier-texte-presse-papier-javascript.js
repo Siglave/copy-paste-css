@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 import Layout from '@/frontend/Layout';
 import Navbar from '@/frontend/Navbar';
+import NavBlock from '@/frontend/NavBlock';
 import ShareBlock from '@/frontend/ShareBlock';
 import Footer from '@/frontend/Footer';
 
@@ -120,7 +121,8 @@ export default function CopyClipBoardFRPage() {
             <HeaderContainer>
                 <Navbar white />
                 <HeroSection>
-                    <PageTitle>Comment copier du texte dans le presse-papier en Javascript.</PageTitle>
+                    <PageTitle>Comment copier du texte dans le presse-papier en Javascript ?</PageTitle>
+                    <NavBlock />
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>

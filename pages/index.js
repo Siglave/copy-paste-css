@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 import Layout from '@/frontend/Layout';
 import Navbar from '@/frontend/Navbar';
+import NavBlock from '@/frontend/NavBlock';
 import ShareBlock from '@/frontend/ShareBlock';
 import { BUTTONS } from '@/frontend/elements/buttons';
 import { Flex, CompanyName } from '@/frontend/styledComponents';
@@ -43,6 +44,9 @@ const PageTitle = styled.h1`
     font-size: 72px;
     text-align: center;
     color: #393939;
+    @media (max-width: 1000px) {
+        font-size: 40px;
+    }
 `
 
 const PinText = styled.p`
@@ -132,7 +136,7 @@ export default function ButtonPage() {
                     <PageTitle>Simple CSS Button examples</PageTitle>
                     <SubTitle>Find the inspiration for your new button design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
-
+                    <NavBlock page={"BUTTONS"} />
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>

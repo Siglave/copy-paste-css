@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 import Layout from '@/frontend/Layout';
 import Navbar from '@/frontend/Navbar';
+import NavBlock from '@/frontend/NavBlock';
 import ShareBlock from '@/frontend/ShareBlock';
 import { PALETTES } from '@/frontend/elements/palettes';
 import { Flex, CompanyName } from '@/frontend/styledComponents'
@@ -35,6 +36,9 @@ const PageTitle = styled.h1`
     font-size: 72px;
     text-align: center;
     color: #393939;
+    @media (max-width: 1000px) {
+        font-size: 40px;
+    }
 `
 
 const PinText = styled.p`
@@ -128,6 +132,23 @@ const CompanyWrapper = styled.div`
     }
 `
 
+const CopyLineBtn = styled.span`
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display:flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #F3F4F6;
+    box-shadow: 0px 1px 0px 0px rgba(9,30,66,.25);
+    transition: 0.2s;
+    :hover{
+        box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);
+        background: ${({ backColor }) => backColor};
+    }
+`
+
 
 const SITE_URL = "https://copy-paste-css.com/color-palettes";
 const Title = "Complete Color Palettes examples for your new project!";
@@ -151,8 +172,9 @@ export default function ColorPalettesPage() {
                 <Navbar />
                 <HeroSection>
                     <PageTitle>Complete Color Palettes examples</PageTitle>
-                    <SubTitle>Find the inspiration for your new Color palette. Click on an element to copy the CSS!</SubTitle>
+                    <SubTitle>Find the inspiration for your new Color palette. Click on a color to copy its code or copy the line!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
+                    <NavBlock page={"COLOR_PALETTES"} />
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>
@@ -177,6 +199,17 @@ export default function ColorPalettesPage() {
                                                 <Color>{color}</Color>
                                             </ColorCard>
                                         ))}
+                                        <CopyLineBtn
+                                            backColor={paletteColor[2]}
+                                            style={{ marginLeft: "16px", }}
+                                            onClick={() => {
+                                                let jsonPalette = {};
+                                                paletteColor.forEach((pC, i) => {
+                                                    jsonPalette[`color${(i + 1) * 100}`] = pC;
+                                                })
+                                                copyCss(JSON.stringify(jsonPalette))();
+                                            }}
+                                        >📋</CopyLineBtn>
                                     </Flex>
                                 ))}
                             </CompanyContainer>

@@ -33,7 +33,6 @@ export default function Footer() {
     return (
         <FooterStyled>
             <FooterText>Made with ❤️ by <TwitterLink target="_blank" href="https://twitter.com/siglavesc2">@siglavesc2</TwitterLink></FooterText>
-            <a href="https://www.buymeacoffee.com/copypastecss" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" style={{ height: "40px", marginLeft: "16px" }} /></a>
         </FooterStyled>
     )
 }

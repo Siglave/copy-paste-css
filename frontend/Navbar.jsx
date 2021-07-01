@@ -17,21 +17,27 @@ const SiteName = styled.a`
     color: #393939;
 `
 
-const StyledLink = styled.a`
+const BuyMeCoffeeLink = styled.a`
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 50px;
     font-size: 16px;
-    font-weight: 600;
-    color: ${({ white }) => white ? "#fff" : "#393939"};
-    
+    background-color: #fd0;
+    font-weight: 500;
+    color: #222;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 16%), 0 2px 2px 0 rgb(0 0 0 / 11%), 0 1px 5px 0 rgb(0 0 0 / 10%);
+    transition: 0.25s;
     :hover{
-        text-decoration: underline;
+        transform: translateY(-2px);
     }
-    @media (max-width: 1000px) {
-        font-size: 14px;
-    }
+
 `
 
 
-export default function Navbar({ white }) {
+export default function Navbar() {
     return (
         <Nav>
             <Flex style={{ justifyContent: "space-between" }}>
@@ -39,12 +45,7 @@ export default function Navbar({ white }) {
                     <SiteName>📋 Copy & Paste CSS</SiteName>
                 </Link>
                 <div>
-                    <Link href='/' passHref>
-                        <StyledLink white={white} style={{ marginRight: '16px' }} >Buttons</StyledLink>
-                    </Link>
-                    <Link href='/box-shadows' passHref>
-                        <StyledLink white={white} style={{ marginRight: '16px' }} >Box-shadows</StyledLink>
-                    </Link>
+                    <BuyMeCoffeeLink href="https://www.buymeacoffee.com/copypastecss" target="_blank">☕ Buy me a Coffee</BuyMeCoffeeLink>
                 </div>
             </Flex>
         </Nav>
