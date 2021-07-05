@@ -110,6 +110,18 @@ const DesignSystemLink = styled.a`
     }
 `
 
+const InfoText = styled.p`
+    font-size: 14px;
+    color: ${({ theme }) => theme.grey5};
+    text-align: justify;
+    margin-bottom: 40px;
+    max-width: 75%;
+    line-height: 20px;
+    @media (max-width: 1000px) {
+        max-width: 100%;
+    }
+`
+
 
 const SITE_URL = "https://copy-paste-css.com";
 const Title = "Simple CSS Button examples for your new project!";
@@ -135,6 +147,7 @@ export default function ButtonPage() {
                 <HeroSection>
                     <PageTitle>Simple CSS Button examples</PageTitle>
                     <SubTitle>Find the inspiration for your new button design. Click on an element to copy the CSS!</SubTitle>
+
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
                     <NavBlock page={"BUTTONS"} />
                 </HeroSection>
@@ -149,6 +162,17 @@ export default function ButtonPage() {
                 </div>
             </ShapeContainer>
             <Layout>
+                <CompanyName>The Buttton element</CompanyName>
+                <InfoText>
+                    The Button is one of the most important design elements of your website.
+                    It will help to guide your visitors inside your application.
+                    That's why your button needs to reflect the importance of a specif action and contrast with other page elements.
+                    On a landing page, your CTA needs to be seen immediately so that your user knows what to if he is interested in your product.
+                    Most of the time you will need 3 different button designs.
+                    One is the primary action in a solid color to emphasize the main action of a page.
+                    The secondary action with a transparent background and a solid border, and a text button for less important actions.
+                    Here you will a selection of button designs from other brands to help you find inspiration for your new button design.
+                </InfoText>
                 <Flex style={{ alignItems: "start" }}>
                     {BUTTONS.map((el, i) => (
                         <div key={i} style={{ marginRight: "72px" }}>

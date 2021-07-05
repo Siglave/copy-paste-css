@@ -162,8 +162,8 @@ export default function ColorPalettesPage() {
     return (
         <>
             <Head>
-                <title>Copy & Paste CSS -  Box-shadows</title>
-                <meta property="og:title" content="CSS Box Shadows examples" />
+                <title>Copy & Paste CSS -  Color Palettes</title>
+                <meta property="og:title" content="Complete Color Palettes examples" />
                 <meta property="og:description" content="Find inspiration with a curated list of complete Color Palettes examples for your next project. Just Copy and Past every CSS element!" />
                 <meta property="og:url" content="https://copy-paste-css.com/color-palettes" />
                 <meta property="og:image" content="https://i.imgur.com/HbXd9YG.png" />
