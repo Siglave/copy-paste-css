@@ -166,7 +166,7 @@ export default function ColorPalettesPage() {
                 <meta property="og:title" content="Complete Color Palettes examples" />
                 <meta property="og:description" content="Find inspiration with a curated list of complete Color Palettes examples for your next project. Just Copy and Past every CSS element!" />
                 <meta property="og:url" content="https://copy-paste-css.com/color-palettes" />
-                <meta property="og:image" content="https://i.imgur.com/HbXd9YG.png" />
+                <meta property="og:image" content="https://i.imgur.com/O680M9f.png" />
             </Head>
             <HeaderContainer>
                 <Navbar />
