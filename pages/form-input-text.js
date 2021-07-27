@@ -7,10 +7,19 @@ import Layout from '@/frontend/Layout';
 import Navbar from '@/frontend/Navbar';
 import NavBlock from '@/frontend/NavBlock';
 import ShareBlock from '@/frontend/ShareBlock';
-import { PALETTES } from '@/frontend/elements/palettes';
+import { FORM_INPUT_TEXT } from '@/frontend/elements/form-input-text';
 import { Flex, CompanyName } from '@/frontend/styledComponents'
 import Footer from '@/frontend/Footer';
 
+
+const FormInput = styled.input`
+    width: 250px;
+    margin-bottom: 24px;
+    margin-right: 72px;
+    @media (max-width: 900px) {
+        margin-right: 24px;
+    }
+`
 
 const CompanyContainer = styled(Flex)`
     align-items: center;
@@ -25,7 +34,7 @@ const CompanyContainer = styled(Flex)`
 
 
 const HeaderContainer = styled.div`
-    background-image: linear-gradient(to top left, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
 `
 
 const HeroSection = styled.div`
@@ -87,7 +96,7 @@ const ShapeContainer = styled.div`
     }
 
     .custom-shape-divider-bottom-1624211663 .shape-fill {
-        fill: #fff;
+        fill: #f7fafc;
     }
 `
 
@@ -103,81 +112,35 @@ const DesignSystemLink = styled.a`
     }
 `
 
-const ColorCard = styled.div`
-    cursor: pointer;
-    height: 75px;
-    width: 65px;
-    display: flex;
-    justify-content: start;
-    align-items: flex-end;
-    transition: 0.2s;
-    font-size:12px;
-    :hover{
-        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-        transform: scale(1.5);
-    }
-`
 
-const Color = styled.span`
-    width: 100%;
-    background: #ffffff4f;
-    font-weight: 500;
-    color: #121212;
-    text-transform: uppercase;
-`
+const SITE_URL = "https://copy-paste-css.com/box-shadows";
+const Title = "Simple CSS Box-shadow examples for your new project!";
 
-const CompanyWrapper = styled.div`
-    width: 50%;
-    @media (max-width: 1400px) {
-        width: 100%;
-    }
-`
-
-const CopyLineBtn = styled.span`
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display:flex;
-    border-radius: 50px;
-    justify-content: center;
-    align-items: center;
-    background: #F3F4F6;
-    box-shadow: 0px 1px 0px 0px rgba(9,30,66,.25);
-    transition: 0.2s;
-    :hover{
-        box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025);
-        background: ${({ backColor }) => backColor};
-    }
-`
-
-
-const SITE_URL = "https://copy-paste-css.com/color-palettes";
-const Title = "Complete Color Palettes examples for your new project!";
-
-export default function ColorPalettesPage() {
+export default function FormInputPage() {
 
     const copyCss = (css) => () => {
         navigator.clipboard.writeText(css)
-        toast.dark('🚀 Color Copied!');
+        toast.dark('🚀 CSS Copied!');
     }
+
     return (
         <>
             <Head>
-                <title>Copy & Paste CSS -  Color Palettes examples</title>
+                <title>Copy & Paste CSS - Form Input Text Design</title>
                 <meta name="description"
-                    content="Find inspiration with a curated list of simple Color Palettes design examples for your next project. Just Copy and Past the code of every color palette element!" />
-                <meta property="og:title" content="Complete Color Palettes examples" />
-                <meta property="og:description" content="Find inspiration with a curated list of complete Color Palettes examples for your next project. Just Copy and Past every CSS element!" />
-                <meta property="og:url" content="https://copy-paste-css.com/color-palettes" />
-                <meta property="og:image" content="https://i.imgur.com/O680M9f.png" />
+                    content="Find inspiration with a curated list of simple CSS Form Input text design examples for your next project. Just Copy and Past the CSS of every Form Input text element!" />
+                <meta property="og:title" content="CSS Form Input text examples" />
+                <meta property="og:description" content="Find inspiration with a curated list of simple Form Input text examples for your next project. Just Copy and Past every CSS element!" />
+                <meta property="og:url" content="https://copy-paste-css.com/form-input-text" />
+                <meta property="og:image" content="https://i.imgur.com/HbXd9YG.png" />
             </Head>
             <HeaderContainer>
                 <Navbar />
                 <HeroSection>
-                    <PageTitle>Complete Color Palettes examples</PageTitle>
-                    <SubTitle>Find the inspiration for your new Color palette. Click on a color to copy its code or copy the line!</SubTitle>
+                    <PageTitle>Simple CSS Form Input Text examples</PageTitle>
+                    <SubTitle>Find the inspiration for your new Form Input Text design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
-                    <NavBlock page={"COLOR_PALETTES"} />
+                    <NavBlock page={"FORM_INPUT_TEXT"} />
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>
@@ -189,34 +152,17 @@ export default function ColorPalettesPage() {
                     </svg>
                 </div>
             </ShapeContainer>
-            <Layout white>
-                <Flex style={{ alignItems: "start", background: "#fff" }}>
-                    {PALETTES.map((el, i) => (
-                        <CompanyWrapper key={i}>
+            <Layout>
+                <Flex style={{ alignItems: "start", background: "#f7fafc" }}>
+                    {FORM_INPUT_TEXT.map((el, i) => (
+                        <div key={i}>
                             <CompanyName>{el.company} {el.designSystemUrl && (<DesignSystemLink rel="nofollow" target="_blank" href={el.designSystemUrl} >🔗 Design System</DesignSystemLink>)} </CompanyName>
                             <CompanyContainer>
-                                {el.palette.map((paletteColor, j) => (
-                                    <Flex style={{ width: "100%", marginBottom: "8px" }} key={j}>
-                                        {paletteColor.map((color, y) => (
-                                            <ColorCard key={y} onClick={copyCss(color)} style={{ background: color }}>
-                                                <Color>{color}</Color>
-                                            </ColorCard>
-                                        ))}
-                                        <CopyLineBtn
-                                            backColor={paletteColor[2]}
-                                            style={{ marginLeft: "16px", }}
-                                            onClick={() => {
-                                                let jsonPalette = {};
-                                                paletteColor.forEach((pC, i) => {
-                                                    jsonPalette[`color${(i + 1) * 100}`] = pC;
-                                                })
-                                                copyCss(JSON.stringify(jsonPalette))();
-                                            }}
-                                        >📋</CopyLineBtn>
-                                    </Flex>
+                                {el.elements.map((b, j) => (
+                                    <FormInput placeholder="Click Me!" type="text" key={j} onClick={copyCss(b.css)} css={b.css} />
                                 ))}
                             </CompanyContainer>
-                        </CompanyWrapper>
+                        </div>
                     ))}
                 </Flex>
             </Layout>

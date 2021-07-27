@@ -60,6 +60,7 @@ const PageTitle = styled.h1`
     font-size: 72px;
     text-align: center;
     color: #393939;
+    text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%);
     @media (max-width: 1000px) {
         font-size: 40px;
     }
