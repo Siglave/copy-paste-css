@@ -73,5 +73,294 @@ export const FORM_INPUT_TEXT = [
                 `
             },
         ]
-    }
+    },
+    {
+        company: "Stripe",
+        elements: [
+            {
+                css: `
+                    border: 0;
+                    outline: 0;
+                    color: rgb(60, 66, 87);
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    padding: 4px 8px;
+                    min-height: 28px;
+                    vertical-align: middle;
+                    transition: background-color .24s,box-shadow .24s;
+                    transition-property: background-color, box-shadow;
+                    transition-duration: 0.24s, 0.24s;
+                    transition-timing-function: ease, ease;
+                    transition-delay: 0s, 0s;
+                    :focus{
+                        box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(58 151 212 / 36%) 0px 0px 0px 4px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Carbon",
+        elements: [
+            {
+                css: `
+                    box-sizing: border-box;
+                    font-family: inherit;
+                    font-size: 14px;
+                    vertical-align: baseline;
+                    font-weight: 400;
+                    line-height: 1.29;
+                    letter-spacing: .16px;
+                    border-radius: 0;
+                    outline: 2px solid transparent;
+                    outline-offset: -2px;
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    border-bottom: 1px solid #8d8d8d;
+                    background-color: #f4f4f4;
+                    padding: 0 16px;
+                    color: #161616;
+                    transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-bezier(.2,0,.38,.9);  
+                    :focus{
+                        outline: 2px solid #0f62fe;
+                        outline-offset: -2px;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Github",
+        elements: [
+            {
+                css: `
+                padding: 5px 12px;
+                font-size: 14px;
+                line-height: 20px;
+                color: #24292e;
+                vertical-align: middle;
+                background-color: #ffffff;
+                background-repeat: no-repeat;
+                background-position: right 8px center;
+                border: 1px solid #e1e4e8;
+                border-radius: 6px;
+                outline: none;
+                box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+                :focus{
+                    border-color: #0366d6;
+                    outline: none;
+                    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+                }
+                `
+            },
+        ]
+    },
+    {
+        company: "Mailchimp",
+        elements: [
+            {
+                css: `
+                    padding: 0 8px;
+                    vertical-align: middle;
+                    border-radius: 2px;
+                    width: 100%;
+                    min-height: 36px;
+                    background-color: #ffffff;
+                    border: 1px solid rgba(36,28,21,0.3);
+                    transition: all 0.2s ease-in-out 0s;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: normal;
+                    :focus{
+                        outline: none;
+                        border: 1px solid #007c89;
+                        box-shadow: inset 0 0 0 1px #007c89;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Salesforce",
+        elements: [
+            {
+                css: `
+                    display: inline-block;
+                    padding: 0 16px 0 12px;
+                    width: 100%;
+                    line-height: 30px;
+                    height: 32px;
+                    border: 1px solid #dddbda;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    color: rgb(8, 7, 7);
+                    transition: border .1s linear,background-color .1s linear;
+                    :focus{
+                        border-color: #1b96ff;
+                        color: var(--sds-c-input-text-color-focus);
+                        box-shadow: rgb(1, 118, 211) 0px 0px 3px 0px;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Atlassian",
+        elements: [
+            {
+                css: `
+                    background-color: rgb(250, 251, 252);
+                    border-color: rgb(223, 225, 230);
+                    color: rgb(9, 30, 66);
+                    cursor: text;
+                    border-radius: 3px;
+                    border-width: 2px;
+                    border-style: solid;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+                    line-height: 1.42857; 
+                    padding: 8px 6px;
+                    height: 36px;
+                    :hover{
+                        background-color: rgb(235, 236, 240);
+                    }
+                    :focus{
+                        background-color: rgb(255, 255, 255);
+                        border-color: rgb(76, 154, 255);
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Flexport",
+        elements: [
+            {
+                css: `
+                    padding: 0 10px;
+                    text-align: left;
+                    transition-property: box-shadow, background;
+                    transition-duration: 150ms;
+                    transition-timing-function: ease-in-out;
+                    background-color: #FFFFFF;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: #DAE3F3;
+                    border-radius: 0px;
+                    color: #272C34;
+                    width: 100%;
+                    cursor: text;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    font-weight: 400;
+                    font-style: normal;
+                    height: 30px;
+                    :hover{
+                        box-shadow: 0px 2px 4px rgb(39 44 52 / 12%);
+                    }
+                    :focus{
+                        transition-property: border-color, box-shadow, background;
+                        border-color: #39414D;
+                        outline: 0px;
+                        box-shadow: 0 0 0 3px #c5d2e7;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Biteable",
+        elements: [
+            {
+                css: `
+                    box-shadow: inset #abacaf 0 0 0 2px;
+                    border: 0;
+                    background: rgba(0, 0, 0, 0);
+                    appearance: none;
+                    width: 100%;
+                    position: relative;
+                    border-radius: 3px;
+                    padding: 9px 12px;
+                    line-height: 1.4;
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                    font-weight: 400;
+                    height: 40px;
+                    transition: all .2s ease;
+                    :hover{
+                        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+                    }
+                    :focus{
+                        background: #fff;
+                        outline: 0;
+                        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Material",
+        elements: [
+            {
+                css: `
+                    color: rgba(0,0,0,.87);
+                    border-bottom-color: rgba(0,0,0,.42);
+                    font-size: 1rem;
+                    font-weight: 400;
+                    letter-spacing: .009375em;
+                    text-decoration: inherit;
+                    text-transform: inherit;
+                    align-self: flex-end;
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 20px 16px 6px;
+                    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+                    border: none;
+                    border-bottom: 1px solid;
+                    border-radius: 4px 4px 0 0;
+                    background: rgb(245, 245, 245);
+                    height: 56px;
+                    :hover{
+                        border-bottom-color: rgba(0,0,0,.87);
+                        background: #ececec;
+                    }
+                    :focus{
+                        border-color: #6200ee;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "MongoDB",
+        elements: [
+            {
+                css: `
+                    width: 100%;
+                    height: 36px;
+                    border-radius: 4px;
+                    padding-left: 12px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    border: 1px solid rgb(137, 151, 155);
+                    transition: border-color 150ms ease-in-out 0s;
+                    outline: none;
+                    color: rgb(33, 49, 60);
+                    background-color: rgb(255, 255, 255);
+                    padding-right: 12px;
+                    :hover{
+                        box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
+                    }
+                `
+            },
+        ]
+    },
 ]

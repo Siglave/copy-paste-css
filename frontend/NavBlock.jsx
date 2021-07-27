@@ -35,9 +35,9 @@ export default function NavBlock({ page }) {
             <Link href='/box-shadows' passHref>
                 <StyledLink active={page === "BOX_SHADOWS"} style={{ marginRight: '16px' }} >👻 Box-shadows</StyledLink>
             </Link>
-            {/* <Link href='/form-input-text' passHref>
+            <Link href='/form-input-text' passHref>
                 <StyledLink active={page === "FORM_INPUT_TEXT"} style={{ marginRight: '16px' }} >⌨️ Form inputs</StyledLink>
-            </Link> */}
+            </Link>
             <Link href='/color-palettes' passHref>
                 <StyledLink active={page === "COLOR_PALETTES"} style={{ marginRight: '16px' }} >🌈 Color palettes</StyledLink>
             </Link>
