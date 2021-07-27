@@ -162,7 +162,9 @@ export default function ColorPalettesPage() {
     return (
         <>
             <Head>
-                <title>Copy & Paste CSS -  Color Palettes</title>
+                <title>Copy & Paste CSS -  Color Palettes examples</title>
+                <meta name="description"
+                    content="Find inspiration with a curated list of simple Color Palettes design examples for your next project. Just Copy and Past the code of every color palette element!" />
                 <meta property="og:title" content="Complete Color Palettes examples" />
                 <meta property="og:description" content="Find inspiration with a curated list of complete Color Palettes examples for your next project. Just Copy and Past every CSS element!" />
                 <meta property="og:url" content="https://copy-paste-css.com/color-palettes" />

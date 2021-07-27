@@ -140,7 +140,9 @@ export default function BoxShadowsPage() {
     return (
         <>
             <Head>
-                <title>Copy & Paste CSS -  Box-shadows</title>
+                <title>Copy & Paste CSS -  Box-shadows Design</title>
+                <meta name="description"
+                    content="Find inspiration with a curated list of simple CSS Box shadows design examples for your next project. Just Copy and Past the CSS of every Box shadow element!" />
                 <meta property="og:title" content="CSS Box Shadows examples" />
                 <meta property="og:description" content="Find inspiration with a curated list of simple Box shadows examples for your next project. Just Copy and Past every CSS element!" />
                 <meta property="og:url" content="https://copy-paste-css.com/box-shadows" />

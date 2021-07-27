@@ -136,7 +136,9 @@ export default function ButtonPage() {
     return (
         <>
             <Head>
-                <title>Copy & Paste CSS - Buttons</title>
+                <title>Copy & Paste CSS - Buttons Design</title>
+                <meta name="description"
+                    content="Find inspiration with a curated list of simple CSS Buttons design examples for your next project. Just Copy and Past the CSS of every button element!" />
                 <meta property="og:title" content="CSS Buttons examples" />
                 <meta property="og:description" content="Find inspiration with a curated list of simple Buttons examples for your next project. Just Copy and Past every CSS element!" />
                 <meta property="og:url" content="https://copy-paste-css.com" />
