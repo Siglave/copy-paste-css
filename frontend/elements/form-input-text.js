@@ -363,4 +363,167 @@ export const FORM_INPUT_TEXT = [
             },
         ]
     },
+    {
+        company: "RemoteOK",
+        elements: [
+            {
+                css: `
+                    padding: 7px;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    background: #fbfbfb;
+                    border: 2px solid transparent;
+                    height: 36px;
+                    box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+                    :focus{
+                        border: 2px solid #000;
+                        border-radius: 4px;
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Rocketcrew.space",
+        elements: [
+            {
+                css: `
+                    width: 100%;
+                    color: rgb(36, 35, 42);
+                    font-size: 16px;
+                    line-height: 20px;
+                    min-height: 28px;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    border: 2px solid transparent;
+                    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+                    background: rgb(251, 251, 251);
+                    transition: all 0.1s ease 0s;
+                    :focus{
+                        border: 2px solid rgb(124, 138, 255);
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Amazon",
+        elements: [
+            {
+                css: `
+                    background-color: #fff;
+                    height: 31px;
+                    padding: 3px 7px;
+                    line-height: normal;
+                    border: 1px solid #a6a6a6;
+                    border-top-color: #949494;
+                    border-radius: 3px;
+                    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+                    outline: 0;
+                    color: #111;
+                    font-size: 13px;
+                    :focus{
+                        border-color: #e77600;
+                        box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Algolia",
+        elements: [
+            {
+                css: `
+                    position: relative;
+                    cursor: text;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 0 16px;
+                    height: 48px;
+                    background-color: #fff;
+                    border: 1px solid #d6d6e7;
+                    border-radius: 3px;
+                    color: rgb(35, 38, 59);
+                    box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+                    overflow: hidden;
+                    transition: all 100ms ease-in-out;
+                    :focus {
+                        border-color: #3c4fe0;
+                        box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Linear (Dark Mode)",
+        elements: [
+            {
+                css: `
+                    padding: 6px 12px;
+                    background: rgb(31, 32, 35);
+                    border: 1px solid rgb(60, 63, 68);
+                    border-radius: 4px;
+                    font-size: 13px;
+                    color: rgb(247, 248, 248);
+                    height: 46px;
+                    appearance: none;
+                    transition: border 0.15s ease 0s;
+                    :focus{
+                        outline: none;
+                        box-shadow: none;
+                        border-color: rgb(100, 153, 255);
+                    }
+                `
+            },
+        ]
+    },
+    {
+        company: "Figma",
+        elements: [
+            {
+                css: `
+                border: 3px solid #000;
+                border-radius: 5px;
+                height: 50px;
+                line-height: normal;
+                color: #282828;
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                user-select: auto;
+                font-size: 16px;
+                padding: 0 6px;
+                padding-left: 12px;
+                :focus{
+                    border: 3px solid #5551ff;
+                }
+                `
+            },
+        ]
+    },
+    {
+        company: "DEV.to",
+        elements: [
+            {
+                css: `
+                border-radius: 5px;
+                background: rgb(249, 250, 250);
+                border: 1px solid rgb(181, 189, 196);
+                font-size: 16px;
+                height: 40px;
+                line-height: 24px;
+                padding: 7px 8px;
+                color: rgb(8, 9, 10);
+                box-shadow: none;
+                :focus{
+                    background-color: #fff;
+                    border-color: #3b49df;
+                    box-shadow: 1px 1px 0 #3b49df;
+                }
+                `
+            },
+        ]
+    },
 ]
