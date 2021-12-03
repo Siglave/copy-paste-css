@@ -53,7 +53,8 @@ const HeaderContainer = styled.div`
 `
 
 const HeroSection = styled.div`
-    padding: 72px 0  156px 0; 
+    padding: 72px 0  156px 0;
+    padding-top: 24px;
 `
 
 const PageTitle = styled.h1`
@@ -127,6 +128,58 @@ const DesignSystemLink = styled.a`
     }
 `
 
+const AffiliateBanner = styled.div`
+    padding: 16px 46px;
+    background: linear-gradient(to left, rgb(28, 30, 38), rgb(43 45 58));
+    display: inline-block;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: 18px;
+    @media (max-width: 1200px) {
+        padding: 12px 24px;
+        font-size: 14px;
+        border-radius: 0px;
+    }
+`
+
+const LinkAffiliate = styled.a`
+    font-weight: bold;
+    margin-left: 16px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 16px 16px;
+    min-height: 38px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(88, 101, 242);
+    transition: background-color .17s ease,color .17s ease;
+    :hover {
+        background-color: rgb(71, 82, 196);
+    }
+    @media (max-width: 1200px) {
+        padding: 8px 8px;
+        display: block;
+        margin-left: 0px;
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: inherit;
+    }
+`
+
+const BorderText = styled.span`
+    border-bottom: 3px solid #4af071;
+    @media (max-width: 1200px) {
+        border-bottom: 1px solid #4af071;
+    }
+`
+
 
 const SITE_URL = "https://copy-paste-css.com/box-shadows";
 const Title = "Simple CSS Box-shadow examples for your new project!";
@@ -152,6 +205,9 @@ export default function BoxShadowsPage() {
             <HeaderContainer>
                 <Navbar />
                 <HeroSection>
+                    <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
+                        <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771/fULny">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
+                    </div>
                     <PageTitle>Simple CSS Box-shadow examples</PageTitle>
                     <SubTitle>Find the inspiration for your new Box-shadow design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
