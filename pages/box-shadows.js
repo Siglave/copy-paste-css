@@ -206,7 +206,7 @@ export default function BoxShadowsPage() {
                 <Navbar />
                 <HeroSection>
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
-                        <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771/fULny">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
+                        <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
                     </div>
                     <PageTitle>Simple CSS Box-shadow examples</PageTitle>
                     <SubTitle>Find the inspiration for your new Box-shadow design. Click on an element to copy the CSS!</SubTitle>
