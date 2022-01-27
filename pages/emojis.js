@@ -197,6 +197,12 @@ const SearchInput = styled.input`
 
 `
 
+const ClearEmojis = styled.p`
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: ${({ theme }) => theme.grey4};
+`
 
 const SITE_URL = "https://copy-paste-css.com/emojis";
 const Title = "Copy Paste and save every Emojis!";
@@ -279,7 +285,10 @@ export default function EmojisPage() {
             <Layout>
                 <div style={{ background: "#f7fafc" }}>
                     <div>
-                        <EmojiCategory>Your most used Emojis</EmojiCategory>
+                        <Flex style={{ alignItems: "baseline" }}>
+                            <EmojiCategory>Your most used Emojis</EmojiCategory>
+                            <ClearEmojis onClick={() => { localStorage.removeItem('savedEmojis'); setSavedEmojis([]) }}>Clear</ClearEmojis>
+                        </Flex>
                         <Flex>
                             {savedEmojis.length === 0 && (
                                 <NoSavedEmojis>📌 Click on an emoji to save it!</NoSavedEmojis>
