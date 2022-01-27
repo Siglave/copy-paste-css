@@ -17,7 +17,8 @@ const EMOJIS_LIST = EMOJIS_LIST_FUNCT();
 
 
 const HeaderContainer = styled.div`
-    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
+    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
 `
 
 const HeroSection = styled.div`
@@ -255,11 +256,11 @@ export default function EmojisPage() {
             <Head>
                 <title>Copy & Paste - Emojis</title>
                 <meta name="description"
-                    content="Find inspiration with a curated list of simple CSS Form Input text design examples for your next project. Just Copy and Past the CSS of every Form Input text element!" />
-                <meta property="og:title" content="CSS Form Input text examples" />
-                <meta property="og:description" content="Find inspiration with a curated list of simple Form Input text examples for your next project. Just Copy and Past every CSS element!" />
-                <meta property="og:url" content="https://copy-paste-css.com/form-input-text" />
-                <meta property="og:image" content="https://i.imgur.com/HbXd9YG.png" />
+                    content="Find the emoji you need for your next project, post, and more! Every emoji you copy is saved for later!" />
+                <meta property="og:title" content="Copy & Paste - Emojis" />
+                <meta property="og:description" content="Find the emoji you need for your next project, post, and more. Every emoji you copy is saved for later!" />
+                <meta property="og:url" content="https://copy-paste-css.com/emojis" />
+                <meta property="og:image" content="/emojispage.png" />
             </Head>
             <HeaderContainer>
                 <Navbar />
@@ -268,7 +269,7 @@ export default function EmojisPage() {
                         <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
                     </div>
                     <PageTitle>Copy and Paste every Emojis</PageTitle>
-                    <SubTitle>Find the inspiration for your new Form Input Text design. Click on an element to copy the CSS!</SubTitle>
+                    <SubTitle>Find the emoji you need for your next project, post, and more! Every emoji you copy is saved for later.</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
                     <NavBlock page={"EMOJIS"} />
                 </HeroSection>
