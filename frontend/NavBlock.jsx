@@ -41,6 +41,9 @@ export default function NavBlock({ page }) {
             <Link href='/color-palettes' passHref>
                 <StyledLink active={page === "COLOR_PALETTES"} style={{ marginRight: '16px' }} >🌈 Color palettes</StyledLink>
             </Link>
+            <Link href='/emojis' passHref>
+                <StyledLink active={page === "EMOJIS"} style={{ marginRight: '16px' }} >🔥 Emojis</StyledLink>
+            </Link>
         </Flex>
     )
 }

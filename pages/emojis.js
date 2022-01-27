@@ -1,36 +1,19 @@
 import { ToastContainer, toast } from 'react-toastify';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
+import Fuse from 'fuse.js';
 
 
 import Layout from '@/frontend/Layout';
 import Navbar from '@/frontend/Navbar';
 import NavBlock from '@/frontend/NavBlock';
 import ShareBlock from '@/frontend/ShareBlock';
-import { FORM_INPUT_TEXT } from '@/frontend/elements/form-input-text';
-import { Flex, CompanyName } from '@/frontend/styledComponents'
+import { Flex } from '@/frontend/styledComponents'
 import Footer from '@/frontend/Footer';
+import { EMOJIS_LIST_FUNCT } from '@/frontend/elements/emojis-list';
 
-
-const FormInput = styled.input`
-    width: 250px;
-    margin-bottom: 24px;
-    margin-right: 72px;
-    @media (max-width: 900px) {
-        margin-right: 24px;
-    }
-`
-
-const CompanyContainer = styled(Flex)`
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 64px;
-    @media (max-width: 900px) {
-        height: 100%;
-        margin-bottom: 40px;
-    }
-
-`
+const EMOJIS_LIST = EMOJIS_LIST_FUNCT();
 
 
 const HeaderContainer = styled.div`
@@ -165,21 +148,106 @@ const BorderText = styled.span`
     }
 `
 
-
-const SITE_URL = "https://copy-paste-css.com/box-shadows";
-const Title = "Simple CSS Box-shadow examples for your new project!";
-
-export default function FormInputPage() {
-
-    const copyCss = (css) => () => {
-        navigator.clipboard.writeText(css)
-        toast.dark('🚀 CSS Copied!');
+const EmojiStyle = styled.span`
+    font-size: 24px;
+    margin: 8px;
+    font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+    transition: 0.2s;
+    cursor: pointer;
+    :hover{
+        transform: scale(2);
     }
+`
+
+const EmojiCategory = styled.h2`
+    margin-top: 52px;
+    margin-bottom: 18px;
+`
+
+const NoSavedEmojis = styled.p`
+    color: ${({ theme }) => theme.grey5};
+`
+
+const SearchInput = styled.input`
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: white;
+    appearance: none;
+    width: 40%;
+    position: relative;
+    border-radius: 3px;
+    padding: 9px 12px;
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    transition: all .2s ease;
+    :hover{
+        box-shadow: 0 0 0 0 #fff inset, #2b2d3a 0 0 0 2px;
+    }
+    :focus{
+        background: #fff;
+        outline: 0;
+        box-shadow: 0 0 0 0 #fff inset, #2b2d3a 0 0 0 3px;
+    }
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+
+`
+
+
+const SITE_URL = "https://copy-paste-css.com/emojis";
+const Title = "Copy Paste and save every Emojis!";
+
+export default function EmojisPage() {
+    const [savedEmojis, setSavedEmojis] = useState([]);
+    const [searchValue, setSearchValue] = useState("");
+
+    useEffect(() => {
+        if (localStorage.getItem('savedEmojis')) {
+            setSavedEmojis(JSON.parse(localStorage.getItem('savedEmojis')));
+        }
+    }, [])
+
+    const copyText = (text) => () => {
+        navigator.clipboard.writeText(text)
+        toast.dark(`Copied!`);
+        let emojisToSave = [];
+        if (localStorage.getItem('savedEmojis')) {
+            emojisToSave = JSON.parse(localStorage.getItem('savedEmojis'));
+        }
+
+        emojisToSave.unshift(text);
+
+        const setEmojis = Array.from(new Set(emojisToSave));
+        localStorage.setItem('savedEmojis', JSON.stringify(setEmojis));
+
+        setSavedEmojis(setEmojis);
+    }
+
+    const searchCategory = (category) => {
+        const options = {
+            keys: ['tags', 'description', 'aliases'],
+            threshold: 0.15
+        }
+
+        if (searchValue === "") {
+            return EMOJIS_LIST[category];
+        }
+        const fuse = new Fuse(EMOJIS_LIST[category], options);
+
+        const result = fuse.search(searchValue).map((e) => e.item);
+
+        return result;
+    }
+
 
     return (
         <>
             <Head>
-                <title>Copy & Paste CSS - Form Input Text Design</title>
+                <title>Copy & Paste - Emojis</title>
                 <meta name="description"
                     content="Find inspiration with a curated list of simple CSS Form Input text design examples for your next project. Just Copy and Past the CSS of every Form Input text element!" />
                 <meta property="og:title" content="CSS Form Input text examples" />
@@ -193,10 +261,10 @@ export default function FormInputPage() {
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
                         <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
                     </div>
-                    <PageTitle>Simple CSS Form Input Text examples</PageTitle>
+                    <PageTitle>Copy and Paste every Emojis</PageTitle>
                     <SubTitle>Find the inspiration for your new Form Input Text design. Click on an element to copy the CSS!</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
-                    <NavBlock page={"FORM_INPUT_TEXT"} />
+                    <NavBlock page={"EMOJIS"} />
                 </HeroSection>
             </HeaderContainer>
             <ShapeContainer>
@@ -209,18 +277,41 @@ export default function FormInputPage() {
                 </div>
             </ShapeContainer>
             <Layout>
-                <Flex style={{ alignItems: "start", background: "#f7fafc" }}>
-                    {FORM_INPUT_TEXT.map((el, i) => (
-                        <div key={i}>
-                            <CompanyName>{el.company} {el.designSystemUrl && (<DesignSystemLink rel="nofollow" target="_blank" href={el.designSystemUrl} >🔗 Design System</DesignSystemLink>)} </CompanyName>
-                            <CompanyContainer>
-                                {el.elements.map((b, j) => (
-                                    <FormInput placeholder="Click Me!" type="text" key={j} onClick={copyCss(b.css)} css={b.css} />
-                                ))}
-                            </CompanyContainer>
-                        </div>
-                    ))}
-                </Flex>
+                <div style={{ background: "#f7fafc" }}>
+                    <div>
+                        <EmojiCategory>Your most used Emojis</EmojiCategory>
+                        <Flex>
+                            {savedEmojis.length === 0 && (
+                                <NoSavedEmojis>📌 Click on an emoji to save it!</NoSavedEmojis>
+                            )}
+                            {savedEmojis.map((emoji) => (
+                                <EmojiStyle onClick={copyText(emoji)}>{emoji}</EmojiStyle>
+                            ))}
+                        </Flex>
+                    </div>
+                    <div style={{ marginTop: "42px" }}>
+                        <SearchInput placeholder='🔍 Search Emojis' value={searchValue} onChange={({ target }) => { setSearchValue(target.value) }} />
+                    </div>
+                    <div style={{ paddingBottom: "78px" }}>
+                        {Object.keys(EMOJIS_LIST).map((category, i) => {
+                            const items = searchCategory(category);
+
+                            if (items.length === 0) {
+                                return null
+                            }
+                            return (
+                                <div key={i}>
+                                    <EmojiCategory>{category}</EmojiCategory>
+                                    <Flex>
+                                        {items.map((item) => (
+                                            <EmojiStyle onClick={copyText(item.emoji)}>{item.emoji}</EmojiStyle>
+                                        ))}
+                                    </Flex>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
             </Layout>
             <ToastContainer
                 position="top-center"
