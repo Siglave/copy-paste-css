@@ -202,7 +202,7 @@ export default function ButtonPage() {
                 <Navbar />
                 <HeroSection>
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
-                        <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
+                        <AffiliateBanner>Save webpages to Notion in one click with the Klippper extension <LinkAffiliate target="_blank" href="https://klippper.com/?ref=copypastecss">⚡ Try Klippper</LinkAffiliate></AffiliateBanner>
                     </div>
                     <PageTitle>Simple CSS Button examples</PageTitle>
                     <SubTitle>Find the inspiration for your new button design. Click on an element to copy the CSS!</SubTitle>
