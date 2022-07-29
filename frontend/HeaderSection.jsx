@@ -132,7 +132,7 @@ export default function HeaderSection({
     heroTitle,
     heroSubtitle,
     page,
-    styleContainer = {}
+    gradientContainer = {}
 }) {
     return (
         <>
@@ -160,7 +160,7 @@ export default function HeaderSection({
                     gtag('config', 'UA-156528211-6');
                 `}} />
             </Head>
-            <HeaderContainer style={styleContainer}>
+            <HeaderContainer style={gradientContainer}>
                 <Navbar />
                 <HeroSection>
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>

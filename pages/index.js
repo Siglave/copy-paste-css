@@ -73,7 +73,7 @@ export default function ButtonPage() {
                 heroTitle="Simple CSS Button examples"
                 heroSubtitle="Find the inspiration for your new button design. Click on an element to copy the CSS!"
                 page="BUTTONS"
-                styleContainer={
+                gradientContainer={
                     {
                         backgroundColor: "#85FFBD",
                         backgroundImage: "linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)"
