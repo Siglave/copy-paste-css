@@ -166,8 +166,8 @@ const BorderText = styled.span`
 `
 
 
-const SITE_URL = "https://copy-paste-css.com/box-shadows";
-const TITLE = "Simple CSS Box-shadow examples for your new project!";
+const SITE_URL = "https://copy-paste-css.com/form-input-text";
+const TITLE = "Simple CSS Form Input Text Design examples for your new project!";
 
 export default function FormInputPage() {
 
