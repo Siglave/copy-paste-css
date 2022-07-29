@@ -196,16 +196,9 @@ const LinkAffiliate = styled.a`
     }
 `
 
-const BorderText = styled.span`
-    border-bottom: 3px solid #4af071;
-    @media (max-width: 1200px) {
-        border-bottom: 1px solid #4af071;
-    }
-`
-
 
 const SITE_URL = "https://copy-paste-css.com/color-palettes";
-const Title = "Complete Color Palettes examples for your new project!";
+const TITLE = "Complete Color Palettes examples for your new project!";
 
 export default function ColorPalettesPage() {
 
@@ -286,7 +279,7 @@ export default function ColorPalettesPage() {
                 draggable
                 pauseOnHover
             />
-            <ShareBlock Title={Title} SITE_URL={SITE_URL} />
+            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

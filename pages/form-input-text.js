@@ -167,7 +167,7 @@ const BorderText = styled.span`
 
 
 const SITE_URL = "https://copy-paste-css.com/box-shadows";
-const Title = "Simple CSS Box-shadow examples for your new project!";
+const TITLE = "Simple CSS Box-shadow examples for your new project!";
 
 export default function FormInputPage() {
 
@@ -232,7 +232,7 @@ export default function FormInputPage() {
                 draggable
                 pauseOnHover
             />
-            <ShareBlock Title={Title} SITE_URL={SITE_URL} />
+            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

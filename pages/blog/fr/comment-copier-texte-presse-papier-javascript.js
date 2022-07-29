@@ -100,7 +100,7 @@ const CopyBtn = styled.button`
 
 
 const SITE_URL = "https://copy-paste-css.com/blog/fr/comment-copier-texte-presse-papier-javascript";
-const Title = "Copier du texte dans le presse-papier JS";
+const TITLE = "Copier du texte dans le presse-papier JS";
 
 export default function CopyClipBoardFRPage() {
 
@@ -173,7 +173,7 @@ export default function CopyClipBoardFRPage() {
                 draggable
                 pauseOnHover
             />
-            <ShareBlock Title={Title} SITE_URL={SITE_URL} />
+            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

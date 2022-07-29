@@ -100,7 +100,7 @@ const CopyBtn = styled.button`
 
 
 const SITE_URL = "https://copy-paste-css.com/blog/en/how-to-copy-text-to-clipboard-javascript";
-const Title = "How to copy to clipboard in Javascript.";
+const TITLE = "How to copy to clipboard in Javascript.";
 
 export default function CopyClipBoardENPage() {
 
@@ -173,7 +173,7 @@ export default function CopyClipBoardENPage() {
                 draggable
                 pauseOnHover
             />
-            <ShareBlock Title={Title} SITE_URL={SITE_URL} />
+            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

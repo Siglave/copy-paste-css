@@ -206,7 +206,7 @@ const ClearEmojis = styled.p`
 `
 
 const SITE_URL = "https://copy-paste-css.com/emojis";
-const Title = "Copy Paste and save every Emojis!";
+const TITLE = "Copy Paste and save every Emojis!";
 
 export default function EmojisPage() {
     const [savedEmojis, setSavedEmojis] = useState([]);
@@ -333,7 +333,7 @@ export default function EmojisPage() {
                 draggable
                 pauseOnHover
             />
-            <ShareBlock Title={Title} SITE_URL={SITE_URL} />
+            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )
