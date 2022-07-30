@@ -1,8 +1,7 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import styled from 'styled-components';
 
 import Layout from '@/frontend/Layout';
-import ShareBlock from '@/frontend/ShareBlock';
 import { FORM_INPUT_TEXT } from '@/frontend/elements/form-input-text';
 import { Flex, CompanyName } from '@/frontend/styledComponents'
 import Footer from '@/frontend/Footer';
@@ -70,7 +69,10 @@ export default function FormInputPage() {
                     }
                 }
             />
-            <Layout>
+            <Layout
+                title={TITLE}
+                url={SITE_URL}
+            >
                 <Flex style={{ alignItems: "start", background: "#f7fafc" }}>
                     {FORM_INPUT_TEXT.map((el, i) => (
                         <div key={i}>
@@ -84,17 +86,6 @@ export default function FormInputPage() {
                     ))}
                 </Flex>
             </Layout>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                draggable
-                pauseOnHover
-            />
-            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ToastContainer } from 'react-toastify';
+
+import ShareBlock from '@/frontend/ShareBlock';
 
 const PageStyle = styled.div`
     background: ${({ white }) => white ? "#fff" : "#f7fafc"} ;
@@ -11,12 +14,23 @@ const PageStyle = styled.div`
     }
 `
 
-const Layout = ({ children, white }) => {
+const Layout = ({ children, white, title, url }) => {
     return (
         <>
             <PageStyle white={white}>
                 {children}
             </PageStyle>
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                draggable
+                pauseOnHover
+            />
+            <ShareBlock title={title} url={url} />
         </>
     )
 }

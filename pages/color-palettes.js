@@ -1,8 +1,7 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import styled from 'styled-components';
 
 import Layout from '@/frontend/Layout';
-import ShareBlock from '@/frontend/ShareBlock';
 import { PALETTES } from '@/frontend/elements/palettes';
 import { Flex, CompanyName } from '@/frontend/styledComponents'
 import Footer from '@/frontend/Footer';
@@ -107,7 +106,11 @@ export default function ColorPalettesPage() {
                     }
                 }
             />
-            <Layout white>
+            <Layout
+                white
+                title={TITLE}
+                url={SITE_URL}
+            >
                 <Flex style={{ alignItems: "start", background: "#fff" }}>
                     {PALETTES.map((el, i) => (
                         <CompanyWrapper key={i}>
@@ -138,17 +141,6 @@ export default function ColorPalettesPage() {
                     ))}
                 </Flex>
             </Layout>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                draggable
-                pauseOnHover
-            />
-            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

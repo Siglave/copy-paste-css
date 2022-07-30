@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import styled from 'styled-components';
 import Head from 'next/head';
 
@@ -6,7 +6,6 @@ import Head from 'next/head';
 import Layout from '@/frontend/Layout';
 import Navbar from '@/frontend/Navbar';
 import NavBlock from '@/frontend/NavBlock';
-import ShareBlock from '@/frontend/ShareBlock';
 import Footer from '@/frontend/Footer';
 
 
@@ -134,7 +133,10 @@ export default function CopyClipBoardFRPage() {
                     </svg>
                 </div>
             </ShapeContainer>
-            <Layout>
+            <Layout
+                title={TITLE}
+                url={SITE_URL}
+            >
                 <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
                     <div style={{ maxWidth: "900px" }}>
                         <TextArticle>
@@ -163,17 +165,6 @@ export default function CopyClipBoardFRPage() {
                     </div>
                 </div>
             </Layout>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                draggable
-                pauseOnHover
-            />
-            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

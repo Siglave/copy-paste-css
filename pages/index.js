@@ -1,8 +1,7 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import styled from 'styled-components';
 
 import Layout from '@/frontend/Layout';
-import ShareBlock from '@/frontend/ShareBlock';
 import { BUTTONS } from '@/frontend/elements/buttons';
 import { Flex, CompanyName } from '@/frontend/styledComponents';
 import Footer from '@/frontend/Footer';
@@ -80,7 +79,10 @@ export default function ButtonPage() {
                     }
                 }
             />
-            <Layout>
+            <Layout
+                title={TITLE}
+                url={SITE_URL}
+            >
                 <CompanyName>The Buttton element</CompanyName>
                 <InfoText>
                     The Button is one of the most important design elements of your website.
@@ -107,17 +109,6 @@ export default function ButtonPage() {
                     ))}
                 </Flex>
             </Layout>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                draggable
-                pauseOnHover
-            />
-            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )

@@ -1,11 +1,10 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import Fuse from 'fuse.js';
 
 
 import Layout from '@/frontend/Layout';
-import ShareBlock from '@/frontend/ShareBlock';
 import { Flex } from '@/frontend/styledComponents'
 import Footer from '@/frontend/Footer';
 import HeaderSection from '@/frontend/HeaderSection';
@@ -133,7 +132,10 @@ export default function EmojisPage() {
                     }
                 }
             />
-            <Layout>
+            <Layout
+                title={TITLE}
+                url={SITE_URL}
+            >
                 <div style={{ background: "#f7fafc" }}>
                     <div>
                         <Flex style={{ alignItems: "baseline" }}>
@@ -173,17 +175,6 @@ export default function EmojisPage() {
                     </div>
                 </div>
             </Layout>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                draggable
-                pauseOnHover
-            />
-            <ShareBlock title={TITLE} url={SITE_URL} />
             <Footer />
         </>
     )
