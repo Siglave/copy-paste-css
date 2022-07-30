@@ -121,7 +121,7 @@ export default function EmojisPage() {
                 metaTitle="Copy & Paste - Emojis"
                 metaDescription="Find the emoji you need for your next project, post, and more! Every emoji you copy is saved for later!"
                 metaUrl={SITE_URL}
-                metaImage="/emojispage.png"
+                metaImage="/emojisPage.png"
                 heroTitle="Copy and Paste every Emojis"
                 heroSubtitle="Find the emoji you need for your next project, post, and more! Every emoji you copy is saved for later."
                 page="EMOJIS"
