@@ -24,6 +24,7 @@ Each resource matches a company and contain the following properties:
 - `company:STRING` The company's name
 - `designSystemUrl:STRING` A link to the company's design system
 - `elements:ARRAY` An array of objects with the css code of each UI element you want to add
+- `css:String` CSS code of the element, to add an hover effect  put your code inside `:hover{}`
 
 
 Object example
@@ -50,3 +51,11 @@ Object example
     ]
 },
 ```
+
+### Pull Request
+To add a new element you need to create a pull request with the following infos:
+
+- Element type
+- Company name
+- URL of the page where you found the element ( if possible )
+- Screenshot from Copy Paste CSS of the element you created 
