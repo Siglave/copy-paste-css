@@ -22,7 +22,7 @@ Everyone is welcome to collaborate to this project, but please take into conside
 
 Each resource matches a company and contain the following properties:
 - `company:STRING` The company's name
-- `designSystemUrl:STRING` A link to the company's design system
+- `designSystemUrl:STRING` A link to the company's design system ( optional, add an empty string if you don't find one )
 - `elements:ARRAY` An array of objects with the css code of each UI element you want to add
 - `css:String` CSS code of the element, to add an hover effect  put your code inside `:hover{}`
 
