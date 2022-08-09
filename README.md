@@ -63,3 +63,5 @@ To add a new element you need to create a pull request with the following infos:
 - Screenshot from Copy Paste CSS of the element you created 
 
 You can find a pull request example in the issues
+
+##Thank you for contributing!
