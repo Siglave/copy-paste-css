@@ -57,7 +57,9 @@ Object example
 ### Pull Request
 To add a new element you need to create a pull request with the following infos:
 
-- Element type
 - Company name
+- Element type
 - URL of the page where you found the element ( if possible )
 - Screenshot from Copy Paste CSS of the element you created 
+
+You can find a pull request example in the issues
