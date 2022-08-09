@@ -1,15 +1,3 @@
-// Stripe, Spotify, Material Design, Bootstrap
-
-/* 
-    https://primer.style/css/components/buttons
-    https://polaris.shopify.com/components/actions/button#navigation
-    https://www.carbondesignsystem.com/components/button/usage/
-    https://ux.mailchimp.com/patterns/buttons
-    https://developer.salesforce.com/docs/component-library/bundle/lightning:button/example
-    https://style.helpscout.com/visual-elements/
-    https://designsystemsrepo.com/design-systems/
-*/
-
 export const BUTTONS = [
     {
         company: "Bootstrap",
