@@ -6,6 +6,8 @@ Copy Paste CSS aims to gather designs and css code of simple ui elements from di
 
 Everyone is open to add a new element to the website that they found interesting, or to create an entire new category of elements.
 
+![Site](https://imgur.com/6PUOmTB.png)
+
 ## How to Contribute
 
 Everyone is welcome to collaborate to this project, but please take into consideration the following:
