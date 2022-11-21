@@ -121,6 +121,12 @@ const ShapeContainer = styled.div`
     }
 `
 
+const BorderText = styled.span`
+    border-bottom: 3px solid #4af071;
+    @media (max-width: 1200px) {
+        border-bottom: 1px solid #4af071;
+    }
+`
 
 
 export default function HeaderSection({
@@ -164,7 +170,7 @@ export default function HeaderSection({
                 <Navbar />
                 <HeroSection>
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
-                        <AffiliateBanner>Save webpages to Notion in one click with the Klippper extension <LinkAffiliate target="_blank" href="https://klippper.com/?ref=copypastecss">⚡ Try Klippper</LinkAffiliate></AffiliateBanner>
+                        <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771/fULny">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
                     </div>
                     <PageTitle>{heroTitle}</PageTitle>
                     <SubTitle>{heroSubtitle}</SubTitle>
