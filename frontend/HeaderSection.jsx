@@ -170,7 +170,7 @@ export default function HeaderSection({
                 <Navbar />
                 <HeroSection>
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
-                        <AffiliateBanner>The <BorderText>fastest</BorderText> and <BorderText>easiest</BorderText> way to check, copy and edit CSS <LinkAffiliate rel="nofollow" target="_blank" href="https://gumroad.com/a/231494771/fULny">⚡ Get CSS Scan</LinkAffiliate></AffiliateBanner>
+                        <AffiliateBanner><b>Nextjs Devs</b>, the reverse job board for Next.js developers<LinkAffiliate rel="nofollow" target="_blank" href="https://nextjsdevs.net/?source=copypastecss&ref=copypastecss">Create My Profile</LinkAffiliate></AffiliateBanner>
                     </div>
                     <PageTitle>{heroTitle}</PageTitle>
                     <SubTitle>{heroSubtitle}</SubTitle>
