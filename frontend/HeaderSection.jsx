@@ -170,7 +170,7 @@ export default function HeaderSection({
                 <Navbar />
                 <HeroSection>
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
-                        <AffiliateBanner><b>Nextjs Devs</b>, the reverse job board for Next.js developers<LinkAffiliate rel="nofollow" target="_blank" href="https://nextjsdevs.net/?source=copypastecss&ref=copypastecss">Create My Profile</LinkAffiliate></AffiliateBanner>
+                        <AffiliateBanner>Experience Seamless Hosting with <b>DigitalOcean</b><LinkAffiliate rel="nofollow" target="_blank" href="https://digitalocean.pxf.io/JzZBdR">Try now</LinkAffiliate></AffiliateBanner>
                     </div>
                     <PageTitle>{heroTitle}</PageTitle>
                     <SubTitle>{heroSubtitle}</SubTitle>
