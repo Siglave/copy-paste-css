@@ -53,9 +53,9 @@ const Cmd = styled.span`
 
 const AffiliateBanner = styled.div`
     padding: 16px 46px;
-    background: linear-gradient(to left, rgb(28, 30, 38), rgb(43 45 58));
+    background: #ffbe1a;
     display: inline-block;
-    color: white;
+    color: black;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     font-size: 18px;
@@ -72,7 +72,7 @@ const LinkAffiliate = styled.a`
     display: inline-block;
     outline: none;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 50px;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -81,7 +81,7 @@ const LinkAffiliate = styled.a`
     border: none;
     color: #fff;
     text-align: center;
-    background-color: rgb(88, 101, 242);
+    background: linear-gradient(to left, rgb(28, 30, 38), rgb(43, 45, 58));
     transition: background-color .17s ease,color .17s ease;
     :hover {
         background-color: rgb(71, 82, 196);

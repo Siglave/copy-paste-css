@@ -44,9 +44,9 @@ export default function Navbar() {
                 <Link href='/' passHref>
                     <SiteName>📋 Copy & Paste CSS</SiteName>
                 </Link>
-                <div>
+               {/*  <div>
                     <BuyMeCoffeeLink href="https://www.buymeacoffee.com/copypastecss" target="_blank">☕ Buy me a Coffee</BuyMeCoffeeLink>
-                </div>
+                </div> */}
             </Flex>
         </Nav>
     )
