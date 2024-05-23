@@ -170,7 +170,7 @@ export default function HeaderSection({
                 <Navbar />
                 <HeroSection>
                     <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
-                        <AffiliateBanner>Experience Seamless Hosting with <b>DigitalOcean</b><LinkAffiliate rel="nofollow" target="_blank" href="https://digitalocean.pxf.io/JzZBdR">Try now</LinkAffiliate></AffiliateBanner>
+                        <AffiliateBanner>Ship your project in days, not weeks with <b>ShipFast</b><LinkAffiliate target="_blank" href="https://shipfa.st/?via=copypastecss">⚡ Get Started</LinkAffiliate></AffiliateBanner>
                     </div>
                     <PageTitle>{heroTitle}</PageTitle>
                     <SubTitle>{heroSubtitle}</SubTitle>
