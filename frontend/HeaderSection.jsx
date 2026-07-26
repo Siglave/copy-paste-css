@@ -169,9 +169,6 @@ export default function HeaderSection({
             <HeaderContainer style={gradientContainer}>
                 <Navbar />
                 <HeroSection>
-                    <div style={{ display: "flex", justifyContent: "center", marginBottom: "72px" }}>
-                        <AffiliateBanner>Ship your project in days, not weeks with <b>ShipFast</b><LinkAffiliate target="_blank" href="https://shipfa.st/?via=copypastecss">⚡ Get Started</LinkAffiliate></AffiliateBanner>
-                    </div>
                     <PageTitle>{heroTitle}</PageTitle>
                     <SubTitle>{heroSubtitle}</SubTitle>
                     <PinText>📌 Press<Cmd>CTRL + D</Cmd>to bookmark this page.</PinText>
